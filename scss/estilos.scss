@@ -1,6 +1,5 @@
 /*Variables*/
 @import "colores";
-$color-fondo: #ffffff;
 $fuente-principal: Verdana, sans-serif;
 $fuentw-secundaria: sans-serif;
 
@@ -222,7 +221,7 @@ body {
     grid-template-columns: 2, 1fr;
     grid-template-rows: 4, 1fr;
     gap: 15px;
-    color: #ffffff;
+    text-decoration: none;
     font-family: 'fuente-secundaria', verdana, sans-serif;
     font-size: 24px;
     font-style: italic;
@@ -242,7 +241,7 @@ body {
     grid-area: arquitectura;
     width: 100%;
     height: 655px;
-    background-color: burlywood;
+    text-decoration: none;
 }
 .matrimonios{
     display: flex;
@@ -251,7 +250,6 @@ body {
     grid-area: matrimonios;
     width: 100%;
     height: 320px;
-    background-color: burlywood;
 }
 .productos{
     display: flex;
@@ -260,7 +258,6 @@ body {
     grid-area: productos;
     width: 100%;
     height: 320px;
-    background-color: burlywood;
 }
 .sesiones-urbanas{
     display: flex;
@@ -269,7 +266,6 @@ body {
     grid-area: sesiones-urbanas;
     width: 100%;
     height: 500px;
-    background-color: burlywood;
 }
 .sesiones-de-estudio{
     display: flex;
@@ -278,7 +274,7 @@ body {
     grid-area: sesiones-de-estudio;
     width: 100%;
     height: 500px;
-    background-color: burlywood;
+
 }
 
 /*estilos seccion publicidad*/
@@ -402,22 +398,20 @@ body {
 }
 
 /*estilo seccion desarrollo web*/
-
-
 /*footer*/
 .footer{
     margin-top: 20px;
     margin-bottom: 50px;
     color: #1B455D;
-    text-decoration: none;
 }
 
 .flex-container{
     display: flex;
     flex-direction: row;
-    justify-content:flex-start;
+    justify-content: space-evenly;
     margin-left: 117px;
     padding-top: 30px;
+    color: $color-primario;
     text-decoration: none;
 }
 
@@ -915,58 +909,5 @@ body {
         flex-wrap: nowrap;   
         flex-direction: row;
         align-items: center;
-    }
-
-
-
-    .footer{
-        margin-top: 20px;
-        margin-bottom: 50px;
-        color: #1B455D;
-        text-decoration: none;
-    }
-    .flex-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        margin-left: 0px;
-        padding-top: 15px;
-        text-decoration: none;
-    }
-    .box-contacto{
-        font-family: 'variacion', verdana, sans-serif;
-        font-size: 24px;
-        line-height: 50px;
-        margin-right: 0%;
-    }
-    .email{
-        font-family: 'variacion', verdana, sans-serif;
-        font-size: 20px;
-        line-height: 0%;
-    }
-    .box-servicios{
-        font-family: 'variacion', verdana, sans-serif;
-        font-size: 24px;
-        line-height: 50px;
-        margin-right: 0%;
-    }
-    .enlaces-servicios{
-        display: flex;
-        flex-direction: column;
-        font-family: 'variacion', verdana, sans-serif;
-        font-size: 20px;
-        text-decoration: none;
-    }
-    .box-redes-sociales{
-        font-family: 'variacion', verdana, sans-serif;
-        font-size: 24px;
-        line-height: 50px;
-    }
-    .enlaces-redes-sociales{
-        display: flex;
-        flex-direction: column;
-        font-family: 'variacion', verdana, sans-serif;
-        font-size: 20px;
-        text-decoration: none;
     }
 }

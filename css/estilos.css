@@ -82,11 +82,11 @@ body {
   -moz-border-radius: 28;
   font-family: "feunte-secundaria", Verdana, sans-serif;
   border-radius: 28px;
+  color: #ffffff;
   font-size: 20px;
   background: #F59860;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
-  color: #ffffff;
 }
 
 .seccion-1 {
@@ -102,11 +102,6 @@ body {
   align-items: center;
 }
 
-.iconos {
-  display: flex;
-  flex-direction: row-reverse;
-  margin-right: 8%;
-}
 
 /*textos*/
 .texto-principal {
@@ -126,24 +121,31 @@ body {
   color: #F59860;
 }
 
-/*Logotipos*/
+/*iconos enlaces a redes sociales*/
+.iconos {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column-reverse;
+  margin-right: 8%;
+}
 .icono-linkedin {
+  display: flex;
   padding-bottom: 11px;
 }
-
 .icono-behance {
+  display: flex;
   padding-bottom: 11px;
 }
-
 .icono-instagram {
+  display: flex;
   padding-bottom: 11px;
 }
-
 .icono-twitter {
+  display: flex;
   padding-bottom: 11px;
 }
-
 .icono-telegram {
+  display: flex;
   padding-bottom: 11px;
   margin-bottom: 180px;
 }
@@ -221,10 +223,10 @@ body {
   grid-template-columns: 2, 1fr;
   grid-template-rows: 4, 1fr;
   gap: 15px;
-  color: #ffffff;
   font-family: "fuente-secundaria", verdana, sans-serif;
   font-size: 24px;
   font-style: italic;
+  text-decoration: none;
   margin-left: 25px;
   margin-right: 25px;
   margin-top: 118px;
@@ -238,7 +240,10 @@ body {
   grid-area: arquitectura;
   width: 100%;
   height: 655px;
-  background-color: burlywood;
+  background-image: url("../assets/imagenes/arquitectura.jpg");
+  background-size: cover;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .matrimonios {
@@ -248,7 +253,10 @@ body {
   grid-area: matrimonios;
   width: 100%;
   height: 320px;
-  background-color: burlywood;
+  background-image: url("../assets/imagenes/matrimonios.jpg");
+  background-size: cover;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .productos {
@@ -258,7 +266,11 @@ body {
   grid-area: productos;
   width: 100%;
   height: 320px;
-  background-color: burlywood;
+  background-image: url("../assets/imagenes/productos.jpg");
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .sesiones-urbanas {
@@ -268,7 +280,10 @@ body {
   grid-area: sesiones-urbanas;
   width: 100%;
   height: 500px;
-  background-color: burlywood;
+  background-image: url("../assets/imagenes/sesiones-urbanas.jpg");
+  background-size: cover;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .sesiones-de-estudio {
@@ -278,7 +293,11 @@ body {
   grid-area: sesiones-de-estudio;
   width: 100%;
   height: 500px;
-  background-color: burlywood;
+  background-image: url("../assets/imagenes/sesiones-estudio.jpg");
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 /*estilos seccion publicidad*/
@@ -303,7 +322,7 @@ body {
   align-items: center;
   width: 100%;
   height: 490px;
-  background-image: url("../assets/imagenes/mk-2-qG0ZWwd53Jk-unsplash.jpg");
+  background-image: url("../assets/imagenes/branding.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -314,7 +333,7 @@ body {
   align-items: center;
   width: 100%;
   height: 490px;
-  background-image: url("../assets/imagenes/marissa-grootes-ck0i9Dnjtj0-unsplash.jpg");
+  background-image: url("../assets/imagenes/planning.jpg");
   background-size: cover;
 }
 
@@ -324,7 +343,7 @@ body {
   align-items: center;
   width: 100%;
   height: 490px;
-  background-image: url("../assets/imagenes/jo-szczepanska-bjemWZcNF34-unsplash.jpg");
+  background-image: url("../assets/imagenes/gestion-campañas.jpg");
   background-size: cover;
 }
 
@@ -364,7 +383,7 @@ body {
   align-items: center;
   width: 100%;
   height: 490px;
-  background-image: url("../assets/imagenes/stephen-dawson-qwtCeJ5cLYs-unsplash.jpg");
+  background-image: url("../assets/imagenes/analisis-digital.jpg");
   background-size: cover;
 }
 
@@ -374,7 +393,7 @@ body {
   align-items: center;
   width: 100%;
   height: 490px;
-  background-image: url("../assets/imagenes/stephen-phillips-hostreviews-co-uk-shr_Xn8S8QU-unsplash.jpg");
+  background-image: url("../assets/imagenes/opt-seo.jpg");
   background-size: cover;
 }
 
@@ -384,8 +403,9 @@ body {
   align-items: center;
   width: 100%;
   height: 490px;
-  background-image: url("../assets/imagenes/stephen-phillips-hostreviews-co-uk-3Mhgvrk4tjM-unsplash.jpg");
+  background-image: url("../assets/imagenes/email-mkt.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 .call-to-action {
@@ -404,62 +424,57 @@ body {
 /*estilo seccion desarrollo web*/
 /*footer*/
 .footer {
-  margin-top: 20px;
-  margin-bottom: 50px;
-  color: #1B455D;
-  text-decoration: none;
-}
-
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-left: 117px;
-  padding-top: 30px;
-  text-decoration: none;
-}
-
-.box-contacto {
-  font-family: "kanit", sans-serif;
-  font-size: 24px;
-  line-height: 50px;
-  margin-right: 246px;
-}
-
-.email {
-  font-family: "fuente-secundaria", verdana, sans-serif;
-  font-size: 20px;
-  line-height: 0%;
-}
-
-.box-servicios {
-  font-family: "kanit", sans-serif;
-  font-size: 24px;
-  line-height: 50px;
-  margin-right: 246px;
-}
-
-.enlaces-servicios {
-  display: flex;
-  flex-direction: column;
-  font-family: "fuente-secundaria", verdana, sans-serif;
-  font-size: 20px;
-  text-decoration: none;
-}
-
-.box-redes-sociales {
-  font-family: "kanit", sans-serif;
-  font-size: 24px;
-  line-height: 50px;
-}
-
-.enlaces-redes-sociales {
-  display: flex;
-  flex-direction: column;
-  font-family: "fuente-secundaria", verdana, sans-serif;
-  font-size: 20px;
-  text-decoration: none;
-}
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: #1B455D;
+    text-decoration: none;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 0px;
+    padding-top: 15px;
+    text-decoration: none;
+  }
+  .box-contacto {
+    font-family: "variacion", verdana, sans-serif;
+    font-size: 24px;
+    line-height: 50px;
+    margin-right: 0%;
+  }
+  .email {
+    font-family: "variacion", verdana, sans-serif;
+    font-size: 20px;
+    line-height: 0%;
+  }
+  .box-servicios {
+    font-family: "variacion", verdana, sans-serif;
+    font-size: 24px;
+    line-height: 50px;
+    margin-right: 0%;
+  }
+  .enlaces-servicios {
+    display: flex;
+    flex-direction: column;
+    font-family: "variacion", verdana, sans-serif;
+    font-size: 20px;
+    color: #1B455D;
+    text-decoration: none;
+  }
+  .box-redes-sociales {
+    font-family: "variacion", verdana, sans-serif;
+    font-size: 24px;
+    line-height: 50px;
+  }
+  .enlaces-redes-sociales {
+    display: flex;
+    flex-direction: column;
+    font-family: "variacion", verdana, sans-serif;
+    font-size: 20px;
+    color:#1B455D;
+    text-decoration: none;
+  }
 
 /*diseño responsive moviles*/
 @media only screen and (max-width: 767px) {
@@ -887,56 +902,6 @@ body {
     flex-wrap: nowrap;
     flex-direction: row;
     align-items: center;
-  }
-  .footer {
-    margin-top: 20px;
-    margin-bottom: 50px;
-    color: #1B455D;
-    text-decoration: none;
-  }
-  .flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-left: 0px;
-    padding-top: 15px;
-    text-decoration: none;
-  }
-  .box-contacto {
-    font-family: "variacion", verdana, sans-serif;
-    font-size: 24px;
-    line-height: 50px;
-    margin-right: 0%;
-  }
-  .email {
-    font-family: "variacion", verdana, sans-serif;
-    font-size: 20px;
-    line-height: 0%;
-  }
-  .box-servicios {
-    font-family: "variacion", verdana, sans-serif;
-    font-size: 24px;
-    line-height: 50px;
-    margin-right: 0%;
-  }
-  .enlaces-servicios {
-    display: flex;
-    flex-direction: column;
-    font-family: "variacion", verdana, sans-serif;
-    font-size: 20px;
-    text-decoration: none;
-  }
-  .box-redes-sociales {
-    font-family: "variacion", verdana, sans-serif;
-    font-size: 24px;
-    line-height: 50px;
-  }
-  .enlaces-redes-sociales {
-    display: flex;
-    flex-direction: column;
-    font-family: "variacion", verdana, sans-serif;
-    font-size: 20px;
-    text-decoration: none;
   }
 }
 
