@@ -13,7 +13,7 @@
 </head>
 <body>
         <!--HTML Semántico-->
-        <nav class="barra-navegación">
+        <nav class="barra-navegacion">
             <ul class="estilo-links">
                 <!-- Atributo de tipo Class -->
                     <a class="home" href="../index.html">Matias Alcayaga</a>
@@ -28,47 +28,52 @@
                 <!--Ruta Interna-->
                     <a class="boton-contacto" href="../paginas/contacto.html">Contacto</a>
             </ul>
-            <div class="nav-movil">
-                <nav class="navbar bg-body-tertiary fixed-top">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="../index.html">Matias Alcayaga</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                            <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Matias Alcayaga</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="../paginas/Fotografía.html">Fotografía</a>
-                                        <a class="nav-link-active" aria-current="page" href="../paginas/Publicidad.html">Publicidad</a>
-                                        <a class="nav-link active" aria-current="page" href="../paginas/Marketing digital.html">Marketing Digital</a>
-                                        <a class="nav-link-active" aria-current="page" href="../paginas/Desarrollo web.html">Desarrollo Web</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </div>
+            <!--nav movil-->
+            <nav class="navbar navbar-expand-xl navbar-light bg-white">
+                <div class="container">
+                    <a class="navbar-brand" href="../index.html">Matias Alcayaga</a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../paginas/Fotografía.html">Fotografía
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="../paginas/Publicidad.html">Publicidad</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="../paginas/Marketing digital.html">Marketing Digital</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="../paginas/Desarrollo web.html">Desarrollo Web</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="../paginas/Contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div> 
+                </div>
+            </nav>
         </nav>
 
         <main>
             <section class="container text-center">
                 <article class="row">
-                    <div class="col-md-12" class="row-desarrollo web">
+                    <a class="row-desarrollo-web" class="col-md-12">
                         Desarrollo web
-                    </div>
-                    <div class="col-md-12" class="row-ux-ui">
+                    </a>
+                    <a class="row-ux-ui" class="col-md-12">
                         Diseño y optimización UX/UI
-                    </div>
-                    <div class="col-md-12" class="row-desarrollo-apps">
+                    </a>
+                    <a class="row-desarrollo-apps" class="col-md-12">
                         Desarrollo de apps
-                    </div>
-                    <div class="col-md-12" class="row-call-to-action">
+                    </a>
+                    <div class="row-call-to-action" class="col-md-12">
                         - Trabajemos juntos en tu proyecto -
                     </div>
                 </article>

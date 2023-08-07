@@ -15,7 +15,7 @@
 
 <body>
     <!--HTML Semántico-->
-    <nav id="barra-navegación">
+    <nav class="barra-navegacion">
         <ul class="estilo-links">
             <!-- Atributo de tipo Class -->
                 <a class="home" href="../index.html">Matias Alcayaga</a>
@@ -30,52 +30,82 @@
             <!--Ruta Interna-->
                 <a class="boton-contacto" href="../paginas/contacto.html">Contacto</a>
         </ul>
-        <div class="nav-movil">
-            <img class="logo" href="./index.html" src="../assets/iconos/logo M temp.svg">
-            <img class="menu-hamburguesa" href="./index.html" src="../assets/iconos/icono menu hamburguesa.png">
-        </div>
+        <nav class="navbar navbar-expand-xl navbar-light bg-white">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">Matias Alcayaga</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/Fotografía.html">Fotografía
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="../paginas/Publicidad.html">Publicidad</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="../paginas/Marketing digital.html">Marketing Digital</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="../paginas/Desarrollo web.html">Desarrollo Web</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="../paginas/Contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+        </nav>
     </nav>
 
-    <H1>Conversemos</H1>
-
     <main>
-        <form action="procesar.php" method="post">
+        <form class="container-fluid" action="procesar.php" method="post">
+            <div class="box-formulario">
+                <h1 class="form-titulo">Conversemos</h1>
+                <div class="formulario">
+                    <div>
+                        <!-- Input Nombre -->
+                        <label for="nombre"></label>
+                        <input type="text" name="nombre" required placeholder="Nombre">
+                    </div>
+                    <div>
+                        <!-- Input Apellido -->
+                        <label for="apellido"></label>
+                        <input type="text" name="apellido" required placeholder="Apellido">
+                    </div>
+                    <div>
+                        <!-- Input Email -->
+                        <label for="email"></label>
+                        <input type="email" name="email" required placeholder="Email">
+                    </div>
+                </div>
+                <!-- Checkbox -->
+                <h4 class="titulo-form-servicio">Servicio requerido</h4>
+                <div class="form-servicio">
+                    <div class="label">
+                        <label for="servicio">Fotografía</label>
+                        <label for="servicio">Publicidad</label>
+                        <label for="servicio">Marketing digital</label>
+                        <label for="servicio">Desarrollo web</label>
+                    </div>
+                    <div class="input">
+                        <input type="checkbox" name="servicio" value="Fotografía">
+                        <input type="checkbox" name="servicio" value="Publicidad">
+                        <input type="checkbox" name="servicio" value="Marketing digital">
+                        <input type="checkbox" name="servicio" value="Desarrollo web">
+                    </div>
+                </div>
             
-            <div>
-                <!-- Input Nombre -->
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" required>
+                <div class="form-mensaje">
+                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="mensaje"></textarea>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Borrar formulario</button>
+                </div>
             </div>
-            <div>
-                <!-- Input Apellido -->
-                <label for="apellido">Apellido:</label>
-                <input type="text" name="apellido" required>
-            </div>
-            
-            <div>
-                <!-- Input Email -->
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" name="email" required>
-            </div>
-            
-            <!-- Checkbox -->
-            <h3>Servicio requerido</h3>
-            
-            <label for="servicio">Fotografía</label>
-            <input type="checkbox" name="servicio" value="Fotografía">
-            <label for="servicio">Publicidad</label>
-            <input type="checkbox" name="servicio" value="Publicidad">
-            <label for="servicio">Marketing digital</label>
-            <input type="checkbox" name="servicio" value="Marketing digital">
-            <label for="servicio">Desarrollo web</label>
-            <input type="checkbox" name="servicio" value="Desarrollo web">
-            
-            <h3>Cuentame un poco más</h3>
-            <div>
-            <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Deja un mensaje"></textarea>
-            </div>
-            <button type="submit">Enviar</button>
-            <button type="reset">Borrar formulario</button>
         </form>
     </main>
     <footer class="footer">
