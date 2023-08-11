@@ -1,19 +1,17 @@
 /*Variables*/
 @import "colores";
-$fuente-principal: Verdana, sans-serif;
-$fuentw-secundaria: sans-serif;
+@import "fuentes";
 
 body {
-    background-color: $color-fondo;
+    /*if condicional*/
+    @if ($color-fondo == #ffffff){
+        background-color:$color-fondo;
+    } @else {
+        background-color: azure;
+    }
 }
 
-/*Tipografías*/
-@font-face {
-    font-family: 'kanit';
-    src: url('../assets/fuentes/Kanit-Medium.ttf');
-    font-family: 'feunte-secundaria';
-    src: url('../assets/fuentes/Montserrat-Medium.ttf');
-}
+
 
 /*Estilo index*/
 /*Selector de tipo reset o universal*/

@@ -1,25 +1,21 @@
 @charset "UTF-8";
 /*Variables*/
-body {
-  background-color: #ffffff;
-}
-
-/*Tipografías*/
 @font-face {
   font-family: "kanit";
   src: url("../assets/fuentes/Kanit-Medium.ttf");
   font-family: "feunte-secundaria";
   src: url("../assets/fuentes/Montserrat-Medium.ttf");
 }
+body {
+  /*if condicional*/
+  background-color: #ffffff;
+}
+
 /*Estilo index*/
 /*Selector de tipo reset o universal*/
 * {
   margin: 50;
   padding: 0;
-}
-
-a:hover{
-  color: #F59860;
 }
 
 /*barra de navegacion*/
@@ -36,7 +32,7 @@ a:hover{
   color: #F59860;
 }
 
-.navbar {
+.nav-movil {
   display: none;
 }
 
@@ -80,16 +76,17 @@ a:hover{
   text-decoration: none;
   font-size: 20px;
 }
+
 .boton-contacto {
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   font-family: "feunte-secundaria", Verdana, sans-serif;
   border-radius: 28px;
-  color: #ffffff;
   font-size: 20px;
   background: #F59860;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
+  color: #ffffff;
 }
 
 .seccion-1 {
@@ -99,11 +96,17 @@ a:hover{
   margin-top: 15%;
   margin-bottom: 5%;
 }
+
 .img-portada {
   display: flex;
   align-items: center;
 }
 
+.iconos {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 8%;
+}
 
 /*textos*/
 .texto-principal {
@@ -114,6 +117,7 @@ a:hover{
   line-height: 0px;
   color: #F59860;
 }
+
 .texto-secundario {
   font-family: "feunte-secundaria", verdana, sans-serif;
   margin-left: 25%;
@@ -122,31 +126,24 @@ a:hover{
   color: #F59860;
 }
 
-/*iconos enlaces a redes sociales*/
-.iconos {
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column-reverse;
-  margin-right: 8%;
-}
+/*Logotipos*/
 .icono-linkedin {
-  display: flex;
   padding-bottom: 11px;
 }
+
 .icono-behance {
-  display: flex;
   padding-bottom: 11px;
 }
+
 .icono-instagram {
-  display: flex;
   padding-bottom: 11px;
 }
+
 .icono-twitter {
-  display: flex;
   padding-bottom: 11px;
 }
+
 .icono-telegram {
-  display: flex;
   padding-bottom: 11px;
   margin-bottom: 180px;
 }
@@ -224,10 +221,10 @@ a:hover{
   grid-template-columns: 2, 1fr;
   grid-template-rows: 4, 1fr;
   gap: 15px;
+  text-decoration: none;
   font-family: "fuente-secundaria", verdana, sans-serif;
   font-size: 24px;
   font-style: italic;
-  text-decoration: none;
   margin-left: 25px;
   margin-right: 25px;
   margin-top: 118px;
@@ -241,10 +238,7 @@ a:hover{
   grid-area: arquitectura;
   width: 100%;
   height: 655px;
-  background-image: url("../assets/imagenes/arquitectura.jpg");
-  background-size: cover;
   text-decoration: none;
-  color: #ffffff;
 }
 
 .matrimonios {
@@ -254,10 +248,6 @@ a:hover{
   grid-area: matrimonios;
   width: 100%;
   height: 320px;
-  background-image: url("../assets/imagenes/matrimonios.jpg");
-  background-size: cover;
-  text-decoration: none;
-  color: #ffffff;
 }
 
 .productos {
@@ -267,11 +257,6 @@ a:hover{
   grid-area: productos;
   width: 100%;
   height: 320px;
-  background-image: url("../assets/imagenes/productos.jpg");
-  background-size: cover;
-  background-position: center;
-  text-decoration: none;
-  color: #ffffff;
 }
 
 .sesiones-urbanas {
@@ -281,10 +266,6 @@ a:hover{
   grid-area: sesiones-urbanas;
   width: 100%;
   height: 500px;
-  background-image: url("../assets/imagenes/sesiones-urbanas.jpg");
-  background-size: cover;
-  text-decoration: none;
-  color: #ffffff;
 }
 
 .sesiones-de-estudio {
@@ -294,15 +275,10 @@ a:hover{
   grid-area: sesiones-de-estudio;
   width: 100%;
   height: 500px;
-  background-image: url("../assets/imagenes/sesiones-estudio.jpg");
-  background-size: cover;
-  background-position: center;
-  text-decoration: none;
-  color: #ffffff;
 }
 
 /*estilos seccion publicidad*/
-.layout-publicidad{
+.layout-publicidad {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 4fr;
@@ -316,39 +292,29 @@ a:hover{
   margin-right: 25px;
   grid-template-areas: "branding" "planning" "gestion-de-campañas" "call-to-action";
 }
+
 .branding {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 490px;
-  background-image: url("../assets/imagenes/branding.jpg");
-  background-size: cover;
-  background-position: center;
-  text-decoration: none;
-  color: #ffffff;
 }
+
 .planning {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 490px;
-  background-image: url("../assets/imagenes/planning.jpg");
-  background-size: cover;
-  text-decoration: none;
-  color: #ffffff;
 }
+
 .gestion-de-campañas {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 490px;
-  background-image: url("../assets/imagenes/gestion-campañas.jpg");
-  background-size: cover;
-  text-decoration: none;
-  color: #ffffff;
 }
 
 .call-to-action {
@@ -387,10 +353,6 @@ a:hover{
   align-items: center;
   width: 100%;
   height: 490px;
-  background-image: url("../assets/imagenes/analisis-digital.jpg");
-  background-size: cover;
-  text-decoration: none;
-  color: #ffffff;
 }
 
 .opt-seo {
@@ -399,10 +361,6 @@ a:hover{
   align-items: center;
   width: 100%;
   height: 490px;
-  background-image: url("../assets/imagenes/opt-seo.jpg");
-  background-size: cover;
-  text-decoration: none;
-  color: #ffffff;
 }
 
 .email-mkt {
@@ -411,11 +369,6 @@ a:hover{
   align-items: center;
   width: 100%;
   height: 490px;
-  background-image: url("../assets/imagenes/email-mkt.jpg");
-  background-size: cover;
-  background-position: center;
-  text-decoration: none;
-  color: #ffffff;
 }
 
 .call-to-action {
@@ -431,222 +384,86 @@ a:hover{
   background-color: #F59860;
 }
 
-/*layout paginas desarrollo web y contacto bootstrap*/
-.barra-navegacion{
-  margin-top: 15px;
-  margin-right: 25px;
-}
-.row{
-  display: flex;
-  row-gap: 15px;
-  margin-top: 118px;
-  margin-left: 0%;
-  margin-right: 0%;
-}
-.row-desarrollo-web{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 490px;
-  background-image: url("../assets/imagenes/desarrollo-web.jpg");
-  background-size: cover;
-  background-position: center;
-  font-family: "fuente-secundaria", sans-serif;
-  font-size: 24px;
-  font-style: italic;
-  color: #ffffff;
-  text-decoration: none;
-}
-.row-ux-ui{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 490px;
-  background-image: url("../assets/imagenes/diseño-ux-ui.jpg");
-  background-size: cover;
-  background-position: center;
-  font-family: "fuente-secundaria", sans-serif;
-  font-size: 24px;
-  font-style: italic;
-  color: #ffffff;
-  text-decoration: none;
-}
-.row-desarrollo-apps{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 490px;
-  background-image: url("../assets/imagenes/desarrollo-apps.jpg");
-  background-size: cover;
-  background-position: center;
-  font-family: "fuente-secundaria", sans-serif;
-  font-size: 24px;
-  font-style: italic;
-  color: #ffffff;
-  text-decoration: none;
-}
-.row-call-to-action{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 300px;
-  font-family: "fuente-secundaria", sans-serif;
-  font-size: 24px;
-  font-style: italic;
-  color: #ffffff;
-  background-color: #F59860;
-}
-/*estilo seccion contacto*/
-.container-fluid{
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  flex-direction: column;
-  background-image: url("../assets/imagenes/contacto.jpg");
-  background-size: cover;
-  background-position: center;
-  margin-top: 80px;
-  padding-top: 100px;
-  width: 100%;
-  height: 100%;
-  color: #ffffff;
-}
-.box-formulario{
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  flex-direction: column;
-  margin-right: 15%;
-}
-.form-titulo{
-  font-family: "kanit", verdana, sans-serif;
-  font-size: 60px;
-  font-style: italic;
-}
-.formulario{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin-top: 25px;
-  font-size: 20px;
-}
-.titulo-form-servicio{
-  font-family: "kanit", verdana, sans-serif;
-  font-size: 36px;
-  font-style: italic;
-  margin-top: 25px;
-}
-.form-servicio{
-  display: flex;
-  flex-direction: row;
-  font-family: "fuente-secundaria", sans-serif;
-  font-size: 26px;
-  margin-top: 10px;
-}
-.label{
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-}
-.input{
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  margin-left: 15px;
-  row-gap: 26px;
-}
-.form-mensaje{
-  display: flex;
-  flex-direction: column;
-  margin-top: 25px;
-  margin-bottom: 80px;
-  row-gap: 10px;
-}
-
+/*estilo seccion desarrollo web*/
 /*footer*/
 .footer {
-    margin-top: 20px;
-    margin-bottom: 50px;
-    color: #1B455D;
-  }
-  .flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-left: 0px;
-    padding-top: 15px;
-  }
-  .box-contacto {
-    font-family: "kanit", verdana, sans-serif;
-    font-size: 24px;
-    line-height: 50px;
-    margin-right: 0%;
-  }
-  .email {
-    font-family: "fuente-secundaria", verdana, sans-serif;
-    font-size: 20px;
-    padding-top: 15px;
-    line-height: 0%;
-  }
-  .box-servicios {
-    font-family: "kanit", verdana, sans-serif;
-    font-size: 24px;
-    line-height: 50px;
-    margin-right: 0%;
-  }
-  .enlaces-servicios {
-    display: flex;
-    flex-direction: column;
-    font-family: "fuente-secundaria", verdana, sans-serif;
-    font-size: 20px;
-    color: #1B455D;
-    text-decoration: none;
-  }
-  .box-redes-sociales {
-    font-family: "kanit", verdana, sans-serif;
-    font-size: 24px;
-    line-height: 50px;
-  }
-  .enlaces-redes-sociales {
-    display: flex;
-    flex-direction: column;
-    font-family: "fuente-secundaria", verdana, sans-serif;
-    font-size: 20px;
-    color:#1B455D;
-    text-decoration: none;
-  }
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color: #1B455D;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 117px;
+  padding-top: 30px;
+  color: #1B455D;
+  text-decoration: none;
+}
+
+.box-contacto {
+  font-family: "kanit", sans-serif;
+  font-size: 24px;
+  line-height: 50px;
+  margin-right: 246px;
+}
+
+.email {
+  font-family: "fuente-secundaria", verdana, sans-serif;
+  font-size: 20px;
+  line-height: 0%;
+}
+
+.box-servicios {
+  font-family: "kanit", sans-serif;
+  font-size: 24px;
+  line-height: 50px;
+  margin-right: 246px;
+}
+
+.enlaces-servicios {
+  display: flex;
+  flex-direction: column;
+  font-family: "fuente-secundaria", verdana, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.box-redes-sociales {
+  font-family: "kanit", sans-serif;
+  font-size: 24px;
+  line-height: 50px;
+}
+
+.enlaces-redes-sociales {
+  display: flex;
+  flex-direction: column;
+  font-family: "fuente-secundaria", verdana, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+}
 
 /*diseño responsive moviles*/
 @media only screen and (max-width: 767px) {
-  .estilo-links{
+  .estilo-links {
     display: none;
   }
-
-  .navbar{
+  .nav-movil {
     display: flex;
-    justify-content: space-evenly;
-    color: #1B455D;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 75px;
+    margin-left: 25px;
+    margin-right: 25px;
   }
-  .navbar-brand{
-    color: #1B455D;
-  }
-  .navbar .navbar-nav .nav-link {
-    color: #1B455D
-  }
-  .navbar-toggler-icon{
-    color: #1B455D;
-  }
-
   /* header */
   .seccion-1 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr;
-    margin-top: 8%;
+    margin-top: 15%;
     margin-bottom: 50%;
     grid-template-areas: "texto-principal" "texto-secundario" "img-portada";
   }
@@ -804,58 +621,6 @@ a:hover{
     height: 150px;
     background-color: #F59860;
   }
-
-  .box-formulario{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    flex-direction: column;
-  }
-  .form-titulo{
-    font-family: "kanit", verdana, sans-serif;
-    font-size: 54px;
-    font-style: italic;
-  }
-  .formulario{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-top: 25px;
-    font-size: 14px;
-  }
-  .titulo-form-servicio{
-    font-family: "kanit", verdana, sans-serif;
-    font-size: 30px;
-    font-style: italic;
-    margin-top: 25px;
-  }
-  .form-servicio{
-    display: flex;
-    flex-direction: row;
-    font-family: "fuente-secundaria", sans-serif;
-    font-size: 20px;
-    margin-top: 10px;
-  }
-  .label{
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-  }
-  .input{
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-left: 15px;
-    row-gap: 26px;
-  }
-  .form-mensaje{
-    display: flex;
-    flex-direction: column;
-    margin-top: 25px;
-    margin-bottom: 80px;
-    row-gap: 10px;
-  }
-
   .footer {
     margin-top: 20px;
     margin-bottom: 40px;
@@ -910,182 +675,198 @@ a:hover{
   .estilo-links {
     display: none;
   }
-  
-  .navbar{
+  .nav-movil {
     display: flex;
-    justify-content: space-evenly;
-    color: #1B455D;
-  }
-  .navbar-brand{
-    color: #1B455D;
-  }
-  .navbar-toggler-icon{
-    color: #1B455D;
-  }
-
-  /* header */
-  .seccion-1 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 3fr;
-    margin-top: 15%;
-    margin-bottom: 50%;
-    grid-template-areas: "texto-principal" "texto-secundario" "img-portada";
-  }
-  .img-portada {
-    display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    grid-area: img-portada;
-  }
-  .iconos {
-    display: none;
-  }
-  /*textos*/
-  .texto-principal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0%;
-    grid-area: texto-principal;
-    font-size: 48px;
-    font-style: italic;
-    line-height: 13px;
-    color: #F59860;
-    font-family: "fuente-principal", sans-serif;
-  }
-  .texto-secundario {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0%;
-    margin-bottom: 15%;
-    grid-area: texto-secundario;
-    line-height: 0px;
-    font-size: 24px;
-    color: #F59860;
-  }
-  .tarjetas-presentacion {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 3fr;
-    grid-template-areas: "curriculum" "experiencia" "portafolio";
-  }
-  .curriculum {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 15px;
-    border-radius: 30px;
-    color: #ffffff;
-    background: #F59860;
-    padding: 130px 115px 130px 115px;
-    text-decoration: none;
-  }
-  .experiencia {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 15px;
-    border-radius: 30px;
-    color: #ffffff;
-    background: #F59860;
-    padding: 130px 105px 130px 105px;
-    text-decoration: none;
-  }
-  .portafolio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 15px;
-    border-radius: 30px;
-    color: #ffffff;
-    background: #F59860;
-    padding: 130px 115px 130px 115px;
-    text-decoration: none;
-  }
-  .seccion-2 {
-    width: 100%;
-    height: 350px;
-    background-color: #1B455D;
-    padding-top: 10px;
-  }
-  .sm {
-    font-family: "variacion", verdana, sans-serif;
-    font-style: inherit;
-    font-size: 24px;
-    margin-top: 20px;
-    margin-left: 35px;
-    color: #ffffff;
-  }
-  .texto-sm {
-    font-family: "variacion", verdana, sans-serif;
-    font-size: 20px;
-    margin-left: 35px;
-    margin-right: 35px;
-    margin-top: 16px;
-    color: #ffffff;
-  }
-  .footer {
-    margin-top: 20px;
-    margin-bottom: 50px;
-    color: #1B455D;
-    text-decoration: none;
-  }
-  .flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-left: 0px;
-    padding-top: 15px;
-    text-decoration: none;
-  }
-  .box-contacto {
-    font-family: "variacion", verdana, sans-serif;
-    font-size: 24px;
-    line-height: 40px;
-    margin-right: 0%;
-  }
-  .email {
-    font-family: "variacion", verdana, sans-serif;
-    font-size: 20px;
-    line-height: 0%;
-  }
-  .box-servicios {
-    font-family: "variacion", verdana, sans-serif;
-    font-size: 24px;
-    line-height: 40px;
-    margin-right: 0%;
-  }
-  .enlaces-servicios {
-    display: flex;
-    flex-direction: column;
-    font-family: "variacion", verdana, sans-serif;
-    font-size: 20px;
-    text-decoration: none;
-  }
-  .box-redes-sociales {
-    font-family: "variacion", verdana, sans-serif;
-    font-size: 24px;
-    line-height: 40px;
-  }
-  .enlaces-redes-sociales {
-    display: flex;
-    flex-direction: column;
-    font-family: "variacion", verdana, sans-serif;
-    font-size: 20px;
-    text-decoration: none;
+    margin-top: 30px;
+    margin-bottom: 75px;
+    margin-left: 25px;
+    margin-right: 25px;
   }
 }
+/* header */
+.seccion-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr;
+  margin-top: 15%;
+  margin-bottom: 50%;
+  grid-template-areas: "texto-principal" "texto-secundario" "img-portada";
+}
+
+.img-portada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: img-portada;
+}
+
+.iconos {
+  display: none;
+}
+
+/*textos*/
+.texto-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0%;
+  grid-area: texto-principal;
+  font-size: 48px;
+  font-style: italic;
+  line-height: 13px;
+  color: #F59860;
+  font-family: "fuente-principal", sans-serif;
+}
+
+.texto-secundario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0%;
+  margin-bottom: 15%;
+  grid-area: texto-secundario;
+  line-height: 0px;
+  font-size: 24px;
+  color: #F59860;
+}
+
+.tarjetas-presentacion {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr;
+  grid-template-areas: "curriculum" "experiencia" "portafolio";
+}
+
+.curriculum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  border-radius: 30px;
+  color: #ffffff;
+  background: #F59860;
+  padding: 130px 115px 130px 115px;
+  text-decoration: none;
+}
+
+.experiencia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  border-radius: 30px;
+  color: #ffffff;
+  background: #F59860;
+  padding: 130px 105px 130px 105px;
+  text-decoration: none;
+}
+
+.portafolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  border-radius: 30px;
+  color: #ffffff;
+  background: #F59860;
+  padding: 130px 115px 130px 115px;
+  text-decoration: none;
+}
+
+.seccion-2 {
+  width: 100%;
+  height: 350px;
+  background-color: #1B455D;
+  padding-top: 10px;
+}
+
+.sm {
+  font-family: "variacion", verdana, sans-serif;
+  font-style: inherit;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-left: 35px;
+  color: #ffffff;
+}
+
+.texto-sm {
+  font-family: "variacion", verdana, sans-serif;
+  font-size: 20px;
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-top: 16px;
+  color: #ffffff;
+}
+
+.footer {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color: #1B455D;
+  text-decoration: none;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 0px;
+  padding-top: 15px;
+  text-decoration: none;
+}
+
+.box-contacto {
+  font-family: "variacion", verdana, sans-serif;
+  font-size: 24px;
+  line-height: 40px;
+  margin-right: 0%;
+}
+
+.email {
+  font-family: "variacion", verdana, sans-serif;
+  font-size: 20px;
+  line-height: 0%;
+}
+
+.box-servicios {
+  font-family: "variacion", verdana, sans-serif;
+  font-size: 24px;
+  line-height: 40px;
+  margin-right: 0%;
+}
+
+.enlaces-servicios {
+  display: flex;
+  flex-direction: column;
+  font-family: "variacion", verdana, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.box-redes-sociales {
+  font-family: "variacion", verdana, sans-serif;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.enlaces-redes-sociales {
+  display: flex;
+  flex-direction: column;
+  font-family: "variacion", verdana, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+}
+
 /* diseño responsive */
 @media screen and (min-width: 1024px) {
   .estilo-links {
