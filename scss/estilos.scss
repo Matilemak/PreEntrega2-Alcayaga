@@ -2,17 +2,6 @@
 @import "colores";
 @import "fuentes";
 
-body {
-    /*if condicional*/
-    @if ($color-fondo == #ffffff){
-        background-color:$color-fondo;
-    } @else {
-        background-color: azure;
-    }
-}
-
-
-
 /*Estilo index*/
 /*Selector de tipo reset o universal*/
 *{
@@ -240,6 +229,10 @@ body {
     width: 100%;
     height: 655px;
     text-decoration: none;
+    background-image: url("../assets/imagenes/arquitectura.jpg");
+    background-position: center;
+    background-size: cover;
+    color: $color-fondo;
 }
 .matrimonios{
     display: flex;
@@ -248,6 +241,11 @@ body {
     grid-area: matrimonios;
     width: 100%;
     height: 320px;
+    text-decoration: none;
+    background-image: url("../assets/imagenes/matrimonios.jpg");
+    background-position: center;
+    background-size: cover;
+    color: $color-fondo;
 }
 .productos{
     display: flex;
@@ -256,6 +254,11 @@ body {
     grid-area: productos;
     width: 100%;
     height: 320px;
+    text-decoration: none;
+    background-image: url("../assets/imagenes/productos.jpg");
+    background-position: center;
+    background-size: cover;
+    color: $color-fondo;
 }
 .sesiones-urbanas{
     display: flex;
@@ -264,6 +267,11 @@ body {
     grid-area: sesiones-urbanas;
     width: 100%;
     height: 500px;
+    text-decoration: none;
+    background-image: url("../assets/imagenes/sesiones-urbanas.jpg");
+    background-position: center;
+    background-size: cover;
+    color: $color-fondo;
 }
 .sesiones-de-estudio{
     display: flex;
@@ -272,7 +280,11 @@ body {
     grid-area: sesiones-de-estudio;
     width: 100%;
     height: 500px;
-
+    text-decoration: none;
+    background-image: url("../assets/imagenes/sesiones-estudio.jpg");
+    background-position: center;
+    background-size: cover;
+    color: $color-fondo;
 }
 
 /*estilos seccion publicidad*/
@@ -300,6 +312,11 @@ body {
     align-items: center;
     width: 100%;
     height: 490px;
+    text-decoration: none;
+    background-image: url("../assets/imagenes/branding.jpg");
+    background-position: center;
+    background-size: cover;
+    color: $color-fondo;
 }
 .planning{
     display: flex;
@@ -307,6 +324,11 @@ body {
     align-items: center;
     width: 100%;
     height: 490px;
+    text-decoration: none;
+    background-image: url("../assets/imagenes/planning.jpg");
+    background-position: center;
+    background-size: cover;
+    color: $color-fondo;
 }
 .gestion-de-campañas{
     display: flex;
@@ -314,6 +336,11 @@ body {
     align-items: center;
     width: 100%;
     height: 490px;
+    text-decoration: none;
+    background-image: url("../assets/imagenes/gestion-campañas.jpg");
+    background-position: center;
+    background-size: cover;
+    color: $color-fondo;
 }
 .call-to-action{
     display: flex;
@@ -354,6 +381,11 @@ body {
     align-items: center;
     width: 100%;
     height: 490px;
+    text-decoration: none;
+    background-image: url("../assets/imagenes/analisis-digital.jpg");
+    background-position: center;
+    background-size: cover;
+    color: $color-fondo;
 }
 .opt-seo{
     display: flex;
@@ -361,6 +393,11 @@ body {
     align-items: center;
     width: 100%;
     height: 490px;
+    text-decoration: none;
+    background-image: url("../assets/imagenes/opt-seo.jpg");
+    background-position: center;
+    background-size: cover;
+    color: $color-fondo;
 }
 .email-mkt{
     display: flex;
@@ -368,6 +405,11 @@ body {
     align-items: center;
     width: 100%;
     height: 490px;
+    text-decoration: none;
+    background-image: url("../assets/imagenes/email-mkt.jpg");
+    background-position: center;
+    background-size: cover;
+    color: $color-fondo;
 }
 .call-to-action{
     display: flex;
