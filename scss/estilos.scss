@@ -8,6 +8,9 @@
     margin: 50;
     padding: 0;
 }
+a:hover{
+    color: $color-secundario;
+}
 /*barra de navegacion*/
 .estilo-links{
     display: flex;
@@ -32,45 +35,40 @@
     text-decoration: none;
     font-size: 30px;
 }
-
 .Fotografia{
-    font-family: 'feunte-secundaria', verdana, sans-serif;
+    font-family: 'fuente-secundaria', verdana, sans-serif;
     margin-left: 15%;
     color: #1B455D;
     text-decoration: none;
     font-size: 20px;
     
 }
-
 .Publicidad{
     margin-left: 30px;
-    font-family: 'feunte-secundaria', Verdana, sans-serif;
+    font-family: 'fuente-secundaria', Verdana, sans-serif;
     color: #1B455D;
     text-decoration: none;
     font-size: 20px;
 }
-
 .Marketing-digital{
     margin-left: 30px;
-    font-family: 'feunte-secundaria', Verdana, sans-serif;
+    font-family: 'fuente-secundaria', Verdana, sans-serif;
     color: #1B455D;
     text-decoration: none;
     font-size: 20px;
 }
-
 .Desarrollo-web{
     margin-left: 30px;
     margin-right: 30px;
-    font-family: 'feunte-secundaria', Verdana, sans-serif;
+    font-family: 'fuente-secundaria', Verdana, sans-serif;
     color: #1B455D;
     text-decoration: none;
     font-size: 20px;
 }
-
 .boton-contacto {
     -webkit-border-radius: 28;
     -moz-border-radius: 28;
-    font-family: 'feunte-secundaria', Verdana, sans-serif;
+    font-family: 'fuente-secundaria', Verdana, sans-serif;
     border-radius: 28px;
     font-size: 20px;
     background: #F59860;
@@ -87,17 +85,17 @@
     margin-top: 15%;
     margin-bottom: 5%;
 }
-
 .img-portada{
     display: flex;
     align-items: center;
     
 }
-
 .iconos{
     display: flex;
-    flex-direction: row-reverse;
+    align-items: flex-end;
+    flex-direction: column;
     margin-right: 8%;
+    margin-bottom: 240px;
 }
 
 /*textos*/
@@ -130,12 +128,10 @@
     padding-bottom: 11px;
 }
 .icono-twitter{
-
     padding-bottom: 11px;
 }
 .icono-telegram{
     padding-bottom: 11px;
-    margin-bottom: 180px;
 }
 
 .seccion-2{
@@ -425,9 +421,62 @@
 }
 
 /*estilo seccion desarrollo web*/
+.layout-desarrollo-web{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
+    row-gap: 15px;
+    font-family: $fuente-secundaria;
+    font-size: 24px;
+    font-style: italic;
+    margin-top: 118px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    grid-template-areas: "desarrollo-web" "ux-ui" "desarrollo-apps" "call-to-action";
+}
+.desarrollo-web{
+    display:flex;
+    grid-area: desarrollo-web;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 490px;
+    text-decoration: none;
+    background-image: url("../assets/imagenes/desarrollo-web.jpg");
+    background-position: center;
+    background-size: cover;
+    color: $color-fondo;
+}
+.ux-ui{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 490px;
+    text-decoration: none;
+    background-image: url("../assets/imagenes/diseño-ux-ui.jpg");
+    background-position: center;
+    background-size: cover;
+    color: $color-fondo;
+}
+.desarrollo-apps{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 490px;
+    text-decoration: none;
+    background-image: url("../assets/imagenes/desarrollo-apps.jpg");
+    background-position: center;
+    background-size: cover;
+    color: $color-fondo;
+}
+
+
+
 /*footer*/
 .footer{
-    margin-top: 20px;
     margin-bottom: 50px;
     color: #1B455D;
 }
@@ -436,7 +485,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-left: 117px;
     padding-top: 30px;
     color: $color-primario;
     text-decoration: none;
@@ -446,7 +494,6 @@
     font-family: 'kanit', sans-serif;
     font-size: 24px;
     line-height: 50px;
-    margin-right: 246px;
 }
 
 .email{
@@ -458,7 +505,6 @@
     font-family: 'kanit', sans-serif;
     font-size: 24px;
     line-height: 50px;
-    margin-right: 246px;
 }
 .enlaces-servicios{
     display: flex;
@@ -738,7 +784,6 @@
         margin-left: 25px;
         margin-right: 25px;
             }
-    }
 
     /* header */
     .seccion-1{
@@ -912,7 +957,7 @@
         font-size: 20px;
         text-decoration: none;
     }
-
+}
 
 /* diseño responsive */
 @media screen and (min-width:1024px){
