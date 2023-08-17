@@ -23,6 +23,7 @@ a:hover {
   justify-content: space-evenly;
   font-size: 15px;
   list-style-type: none;
+  text-decoration: none;
   margin-left: 25px;
   margin-right: 25px;
   color: #1B455D;
@@ -82,7 +83,7 @@ a:hover {
   font-family: "fuente-secundaria", Verdana, sans-serif;
   border-radius: 28px;
   font-size: 20px;
-  background: #F59860;
+  background-color: #F59860;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   color: #ffffff;
@@ -129,22 +130,27 @@ a:hover {
 
 /*Logotipos*/
 .icono-linkedin {
+  display: flex;
   padding-bottom: 11px;
 }
 
 .icono-behance {
+  display: flex;
   padding-bottom: 11px;
 }
 
 .icono-instagram {
+  display: flex;
   padding-bottom: 11px;
 }
 
 .icono-twitter {
+  display: flex;
   padding-bottom: 11px;
 }
 
 .icono-telegram {
+  display: flex;
   padding-bottom: 11px;
 }
 
@@ -498,6 +504,8 @@ a:hover {
 .footer {
   margin-bottom: 50px;
   color: #1B455D;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 .flex-container {
