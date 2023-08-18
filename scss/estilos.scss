@@ -20,10 +20,6 @@ a:hover{
     text-decoration: none;
     margin-left: 25px;
     margin-right: 25px;
-    color: $color-primario;
-        a:hover{
-            color: $color-secundario;
-        }
     }
 
 .nav-movil{
@@ -96,7 +92,7 @@ a:hover{
     align-items: flex-end;
     flex-direction: column;
     margin-right: 8%;
-    margin-bottom: 240px;
+    margin-bottom: 100px;
 }
 
 /*textos*/
@@ -150,14 +146,16 @@ a:hover{
 /*tarjetas presentacion*/
 .tarjetas-presentacion{
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: azure;
+    gap: 15px;
 }
 .curriculum{
     font-family: 'Kanit', sans-serif;
     font-size: 36px;
-    margin-left: 1%;
+    margin-left: 117px;
     border-radius: 30px;
     color: #ffffff;
     background: #F59860;
@@ -165,9 +163,11 @@ a:hover{
     text-decoration: none;
 }
 .experiencia{
+    display: flex;
+    align-self: flex-end;
     font-family: 'Kanit', sans-serif;
     font-size: 36px;
-    margin-left: 1%;
+    margin-right: 117px;
     border-radius: 30px;
     color: #ffffff;
     background: #F59860;
@@ -177,7 +177,7 @@ a:hover{
 .portafolio{
     font-family: 'Kanit', sans-serif;
     font-size: 36px;
-    margin-left: 1%;
+    margin-left: 117px;
     margin-right: 3%;
     border-radius: 30px;
     color: #ffffff;
@@ -194,7 +194,6 @@ a:hover{
     margin-left: 117px;
     color: #ffffff;
 }
-
 .texto-sm{
     font-family: 'fuente-secundaria', verdana, sans-serif;
     font-size: 28px;
@@ -479,31 +478,75 @@ a:hover{
     color: $color-fondo;
 }
 
-
-
+/*estilo seccion contacto*/
+.container-fluid{
+    background-image: url("../assets/imagenes/contacto.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-top: 46px;
+}
+.box-formulario{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: $color-fondo;
+}
+.form-titulo{
+    margin-right: 400px;
+    margin-bottom: 25px;
+    font-family: 'kanit';
+    font-size: 40px;
+    font-style: italic;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-right: 412px;
+    margin-bottom: 25px;
+}
+.titulo-form-servicio{
+    margin-right: 418px;
+    font-size: 24px;
+    font-family: 'fuente-secundaria'
+}
+.form-servicio{
+    display: flex;
+}
+.label{
+    display: flex;
+    flex-direction: column;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    margin-right: 490px;
+}
 /*footer*/
-.footer{
-    margin-bottom: 50px;
-    color: #1B455D;
-    list-style-type: none;
+.footer a{
+    margin-bottom: 5px;
+    color: $color-primario;
     text-decoration: none;
 }
-
+a:hover{
+    color: $color-secundario;
+}
 .flex-container{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding-top: 30px;
+    padding-bottom: 30px;
     color: $color-primario;
     text-decoration: none;
 }
-
 .box-contacto{
     font-family: 'kanit', sans-serif;
     font-size: 24px;
     line-height: 50px;
 }
-
 .email{
     font-family: 'fuente-secundaria', verdana, sans-serif;
     font-size: 20px;
