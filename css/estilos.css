@@ -164,30 +164,96 @@ a:hover {
 }
 
 .seccion-2 {
-  width: 100%;
-  height: 650px;
+  display: flex;
+  flex-direction: row;
+  height: 350px;
+}
+
+.seccion-2-izq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #1B455D;
-  padding-top: 30px;
+  width: 1600px;
+}
+
+.seccion-2-der {
+  display: flex;
+  width: 920px;
+  background-image: url("../assets/imagenes/DSC_0335.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.sm {
+  font-family: "kanit", sans-serif;
+  font-style: inherit;
+  font-size: 36px;
+  margin-left: 117px;
+  color: #ffffff;
+}
+
+.texto-sm {
+  font-family: "fuente-secundaria", verdana, sans-serif;
+  font-size: 20px;
+  margin-left: 117px;
+  margin-right: 60px;
+  margin-top: 16px;
+  color: #ffffff;
 }
 
 /*tarjetas presentacion*/
-.tarjetas-presentacion {
+.fondo-presentacion {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: grey;
+  width: 100%;
+  height: 100%;
+  background-color: #edf5fa;
+}
+
+.textos-presentacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+  margin-left: 117px;
+}
+
+.titulo-2 {
+  display: flex;
+  font-family: sans-serif;
+  font-style: italic;
+  font-size: 46px;
+  color: #1B455D;
+  line-height: 0px;
+}
+
+.descripcion-2 {
+  display: flex;
+  font-family: sans-serif;
+  font-size: 24px;
+  color: #1B455D;
+  line-height: 0px;
+  margin-bottom: 50px;
+}
+
+.tarjetas-presentacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
   gap: 15px;
 }
 
 .curriculum {
   font-family: "Kanit", sans-serif;
   font-size: 36px;
-  margin-left: 117px;
   border-radius: 30px;
   color: #ffffff;
-  background: #F59860;
-  padding: 130px 115px 130px 115px;
+  background: #1B455D;
+  padding: 180px 115px 180px 115px;
   text-decoration: none;
 }
 
@@ -196,42 +262,21 @@ a:hover {
   align-self: flex-end;
   font-family: "Kanit", sans-serif;
   font-size: 36px;
-  margin-right: 117px;
   border-radius: 30px;
   color: #ffffff;
-  background: #F59860;
-  padding: 130px 115px 130px 115px;
+  background: #1B455D;
+  padding: 180px 115px 180px 115px;
   text-decoration: none;
 }
 
 .portafolio {
   font-family: "Kanit", sans-serif;
   font-size: 36px;
-  margin-left: 117px;
-  margin-right: 3%;
   border-radius: 30px;
   color: #ffffff;
-  background: #F59860;
-  padding: 130px 115px 130px 115px;
+  background: #1B455D;
+  padding: 180px 115px 180px 115px;
   text-decoration: none;
-}
-
-.sm {
-  font-family: "kanit", sans-serif;
-  font-style: inherit;
-  font-size: 36px;
-  margin-top: 25px;
-  margin-left: 117px;
-  color: #ffffff;
-}
-
-.texto-sm {
-  font-family: "fuente-secundaria", verdana, sans-serif;
-  font-size: 28px;
-  margin-left: 117px;
-  margin-right: 117px;
-  margin-top: 16px;
-  color: #ffffff;
 }
 
 /*Estilo seccion fotografia*/
