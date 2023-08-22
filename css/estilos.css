@@ -702,6 +702,10 @@ a:hover {
   .estilo-links {
     display: none;
   }
+  .estilo-links-contacto {
+    display: none;
+  }
+  /*menu hamburguesa*/
   .header {
     background-color: #ffffff;
     position: sticky;
@@ -724,6 +728,7 @@ a:hover {
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.5s ease-out;
+    text-decoration: none;
   }
   .menu a {
     display: flex;
@@ -825,6 +830,33 @@ a:hover {
     font-size: 20px;
     color: #F59860;
   }
+  .textos-presentacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+  }
+  .titulo-2 {
+    display: flex;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 36px;
+    color: #1B455D;
+    line-height: 50px;
+  }
+  .descripcion-2 {
+    display: flex;
+    text-align: justify;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #1B455D;
+    margin-bottom: 50px;
+    margin-right: 20px;
+  }
   .tarjetas-presentacion {
     display: grid;
     grid-template-columns: 1fr;
@@ -841,7 +873,7 @@ a:hover {
     margin-bottom: 15px;
     border-radius: 30px;
     color: #ffffff;
-    background: #F59860;
+    background: #1B455D;
     padding: 130px 115px 130px 115px;
     text-decoration: none;
   }
@@ -855,7 +887,7 @@ a:hover {
     margin-bottom: 15px;
     border-radius: 30px;
     color: #ffffff;
-    background: #F59860;
+    background: #1B455D;
     padding: 130px 105px 130px 105px;
     text-decoration: none;
   }
@@ -869,21 +901,36 @@ a:hover {
     margin-bottom: 15px;
     border-radius: 30px;
     color: #ffffff;
-    background: #F59860;
+    background: #1B455D;
     padding: 130px 115px 130px 115px;
     text-decoration: none;
   }
   .seccion-2 {
-    width: 100%;
-    height: 450px;
+    display: flex;
+    flex-direction: column;
+    height: 750px;
+    gap: 0px;
+  }
+  .seccion-2-izq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #1B455D;
-    padding-top: 10px;
+    width: 100%;
+  }
+  .seccion-2-der {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/imagenes/DSC_0335.jpg");
+    background-position: center;
+    background-size: cover;
   }
   .sm {
     font-family: "variacion", verdana, sans-serif;
     font-style: inherit;
     font-size: 24px;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-left: 35px;
     color: #ffffff;
   }
@@ -893,7 +940,63 @@ a:hover {
     margin-left: 35px;
     margin-right: 35px;
     margin-top: 16px;
+    margin-bottom: 50px;
     color: #ffffff;
+  }
+  .layout-fotografia {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6fr;
+    row-gap: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 120px;
+    margin-bottom: 10px;
+    grid-template-areas: "arquitectura" "matrimonios" "productos" "sesiones-urbanas" "sesiones-de-estudio" "call-to-action";
+  }
+  .arquitectura {
+    display: flex;
+    grid-area: arquitectura;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+  }
+  .matrimonios {
+    display: flex;
+    grid-area: matrimonios;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+  }
+  .productos {
+    display: flex;
+    grid-area: productos;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+  }
+  .sesiones-urbanas {
+    display: flex;
+    grid-area: sesiones-urbanas;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-size: cover;
+  }
+  .sesiones-de-estudio {
+    display: flex;
+    grid-area: sesiones-de-estudio;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-size: cover;
   }
   .layout-publicidad {
     display: grid;
@@ -903,7 +1006,7 @@ a:hover {
     color: #ffffff;
     font-size: 20px;
     font-style: italic;
-    margin-top: 50px;
+    margin-top: 120px;
     margin-bottom: 10px;
     grid-template-areas: "branding" "planning" "gestion-de-campañas" "call-to-action";
   }
@@ -912,7 +1015,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 400px;
+    height: 500px;
     background-image: url("../assets/imagenes/branding.jpg");
     background-size: cover;
   }
@@ -921,7 +1024,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 400px;
+    height: 500px;
     background-image: url("../assets/imagenes/planning.jpg");
     background-size: cover;
   }
@@ -930,7 +1033,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 400px;
+    height: 500px;
     background-image: url("../assets/imagenes/gestion-campañas.jpg");
     background-size: cover;
   }
@@ -1000,6 +1103,7 @@ a:hover {
   .estilo-links {
     display: none;
   }
+  /*menu hamburguesa*/
   .header {
     background-color: #ffffff;
     position: sticky;
@@ -1123,6 +1227,33 @@ a:hover {
     font-size: 24px;
     color: #F59860;
   }
+  .textos-presentacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+  }
+  .titulo-2 {
+    display: flex;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 36px;
+    color: #1B455D;
+    line-height: 50px;
+  }
+  .descripcion-2 {
+    display: flex;
+    text-align: justify;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #1B455D;
+    margin-bottom: 50px;
+    margin-right: 20px;
+  }
   .tarjetas-presentacion {
     display: grid;
     grid-template-columns: 1fr;
@@ -1139,7 +1270,7 @@ a:hover {
     margin-bottom: 15px;
     border-radius: 30px;
     color: #ffffff;
-    background: #F59860;
+    background: #1B455D;
     padding: 130px 115px 130px 115px;
     text-decoration: none;
   }
@@ -1153,7 +1284,7 @@ a:hover {
     margin-bottom: 15px;
     border-radius: 30px;
     color: #ffffff;
-    background: #F59860;
+    background: #1B455D;
     padding: 130px 105px 130px 105px;
     text-decoration: none;
   }
@@ -1167,30 +1298,31 @@ a:hover {
     margin-bottom: 15px;
     border-radius: 30px;
     color: #ffffff;
-    background: #F59860;
+    background: #1B455D;
     padding: 130px 115px 130px 115px;
     text-decoration: none;
   }
   .seccion-2 {
-    width: 100%;
-    height: 350px;
-    background-color: #1B455D;
-    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    height: 750px;
+    gap: 0px;
   }
   .sm {
     font-family: "variacion", verdana, sans-serif;
     font-style: inherit;
     font-size: 24px;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-left: 35px;
     color: #ffffff;
   }
   .texto-sm {
     font-family: "variacion", verdana, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     margin-left: 35px;
     margin-right: 35px;
     margin-top: 16px;
+    margin-bottom: 50px;
     color: #ffffff;
   }
   .footer {
