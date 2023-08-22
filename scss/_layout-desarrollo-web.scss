@@ -1,0 +1,52 @@
+/*estilo seccion desarrollo web*/
+.layout-desarrollo-web{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
+    row-gap: 15px;
+    font-family: $fuente-secundaria;
+    font-size: 24px;
+    font-style: italic;
+    margin-top: 118px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    grid-template-areas: "desarrollo-web" "ux-ui" "desarrollo-apps" "call-to-action";
+}
+.desarrollo-web{
+    display:flex;
+    grid-area: desarrollo-web;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 490px;
+    text-decoration: none;
+    background-image: url("../assets/imagenes/desarrollo-web.jpg");
+    background-position: center;
+    background-size: cover;
+    color: $color-fondo;
+}
+.ux-ui{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 490px;
+    text-decoration: none;
+    background-image: url("../assets/imagenes/diseño-ux-ui.jpg");
+    background-position: center;
+    background-size: cover;
+    color: $color-fondo;
+}
+.desarrollo-apps{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 490px;
+    text-decoration: none;
+    background-image: url("../assets/imagenes/desarrollo-apps.jpg");
+    background-position: center;
+    background-size: cover;
+    color: $color-fondo;
+}

@@ -1,0 +1,67 @@
+/*estilos seccion publicidad*/
+.layout-publicidad{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
+    row-gap: 15px;
+    color: #ffffff;
+    font-family: 'fuente-secundaria', verdana, sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    margin-top: 118px;
+    margin-left: 25px;
+    margin-right: 25px;
+    grid-template-areas:
+    "branding"
+    "planning"
+    "gestion-de-campañas"
+    "call-to-action";
+}
+.branding{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 490px;
+    text-decoration: none;
+    background-image: url("../assets/imagenes/branding.jpg");
+    background-position: center;
+    background-size: cover;
+    color: $color-fondo;
+}
+.planning{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 490px;
+    text-decoration: none;
+    background-image: url("../assets/imagenes/planning.jpg");
+    background-position: center;
+    background-size: cover;
+    color: $color-fondo;
+}
+.gestion-de-campañas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 490px;
+    text-decoration: none;
+    background-image: url("../assets/imagenes/gestion-campañas.jpg");
+    background-position: center;
+    background-size: cover;
+    color: $color-fondo;
+}
+.call-to-action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: call-to-action;
+    color: #ffffff;
+    font-size: 24px;
+    font-style: italic;
+    width: 100%;
+    height: 300px;
+    background-color: #F59860;
+}

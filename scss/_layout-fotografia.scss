@@ -1,0 +1,86 @@
+/*layout fotografia*/
+
+/*Estilo seccion fotografia*/
+.layout-fotografia{
+    display: grid;
+    grid-template-columns: 2, 1fr;
+    grid-template-rows: 4, 1fr;
+    gap: 15px;
+    text-decoration: none;
+    font-family: 'fuente-secundaria', verdana, sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 118px;
+    grid-template-areas: 
+    "arquitectura matrimonios"
+    "arquitectura productos"
+    "sesiones-urbanas sesiones-de-estudio"
+    "call-to-action call-to-action";
+}
+.arquitectura{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: arquitectura;
+    width: 100%;
+    height: 655px;
+    text-decoration: none;
+    background-image: url("../assets/imagenes/arquitectura.jpg");
+    background-position: center;
+    background-size: cover;
+    color: $color-fondo;
+}
+.matrimonios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: matrimonios;
+    width: 100%;
+    height: 320px;
+    text-decoration: none;
+    background-image: url("../assets/imagenes/matrimonios.jpg");
+    background-position: center;
+    background-size: cover;
+    color: $color-fondo;
+}
+.productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: productos;
+    width: 100%;
+    height: 320px;
+    text-decoration: none;
+    background-image: url("../assets/imagenes/productos.jpg");
+    background-position: center;
+    background-size: cover;
+    color: $color-fondo;
+}
+.sesiones-urbanas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: sesiones-urbanas;
+    width: 100%;
+    height: 500px;
+    text-decoration: none;
+    background-image: url("../assets/imagenes/sesiones-urbanas.jpg");
+    background-position: center;
+    background-size: cover;
+    color: $color-fondo;
+}
+.sesiones-de-estudio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: sesiones-de-estudio;
+    width: 100%;
+    height: 500px;
+    text-decoration: none;
+    background-image: url("../assets/imagenes/sesiones-estudio.jpg");
+    background-position: center;
+    background-size: cover;
+    color: $color-fondo;
+}

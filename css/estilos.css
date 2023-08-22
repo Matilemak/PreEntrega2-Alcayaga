@@ -6,98 +6,7 @@
   font-family: "fuente-secundaria";
   src: url("../assets/fuentes/Montserrat-Medium.ttf");
 }
-/*Estilo index*/
-/*Selector de tipo reset o universal*/
-* {
-  margin: 50;
-  padding: 0;
-}
-
-a:hover {
-  color: #F59860;
-}
-
-/*barra de navegacion*/
-.estilo-links {
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 15px;
-  list-style-type: none;
-  text-decoration: none;
-  margin-left: 25px;
-  margin-right: 25px;
-}
-
-.estilo-links-contacto {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-right: 35px;
-  margin-top: 12px;
-  margin-bottom: 50px;
-}
-
-.navbar {
-  display: none;
-}
-
-.nav-movil {
-  display: none;
-}
-
-.home {
-  margin-left: 0px;
-  font-family: "variacion", sans-serif;
-  color: #1B455D;
-  text-decoration: none;
-  font-size: 30px;
-}
-
-.Fotografia {
-  font-family: "fuente-secundaria", verdana, sans-serif;
-  margin-left: 15%;
-  color: #1B455D;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-.Publicidad {
-  margin-left: 30px;
-  font-family: "fuente-secundaria", Verdana, sans-serif;
-  color: #1B455D;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-.Marketing-digital {
-  margin-left: 30px;
-  font-family: "fuente-secundaria", Verdana, sans-serif;
-  color: #1B455D;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-.Desarrollo-web {
-  margin-left: 30px;
-  margin-right: 30px;
-  font-family: "fuente-secundaria", Verdana, sans-serif;
-  color: #1B455D;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-.boton-contacto {
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  font-family: "fuente-secundaria", Verdana, sans-serif;
-  border-radius: 28px;
-  font-size: 20px;
-  background-color: #F59860;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-  color: #ffffff;
-}
-
+/*layout home*/
 .seccion-1 {
   display: grid;
   grid-template-areas: "img-portada texto iconos";
@@ -188,14 +97,14 @@ a:hover {
 .sm {
   font-family: "kanit", sans-serif;
   font-style: inherit;
-  font-size: 36px;
+  font-size: 30px;
   margin-left: 117px;
   color: #ffffff;
 }
 
 .texto-sm {
   font-family: "fuente-secundaria", verdana, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   margin-left: 117px;
   margin-right: 60px;
   margin-top: 16px;
@@ -213,18 +122,18 @@ a:hover {
 
 .textos-presentacion {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
   padding-top: 50px;
-  margin-left: 117px;
+  margin-left: 180px;
 }
 
 .titulo-2 {
   display: flex;
   font-family: sans-serif;
   font-style: italic;
-  font-size: 46px;
+  font-size: 36px;
   color: #1B455D;
   line-height: 0px;
 }
@@ -232,10 +141,10 @@ a:hover {
 .descripcion-2 {
   display: flex;
   font-family: sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   color: #1B455D;
-  line-height: 0px;
   margin-bottom: 50px;
+  margin-right: 400px;
 }
 
 .tarjetas-presentacion {
@@ -279,6 +188,7 @@ a:hover {
   text-decoration: none;
 }
 
+/*layout fotografia*/
 /*Estilo seccion fotografia*/
 .layout-fotografia {
   display: grid;
@@ -632,6 +542,97 @@ a:hover {
 .email {
   display: flex;
   margin-top: 23px;
+}
+
+/*Estilos paginas base*/
+* {
+  margin: 50;
+  padding: 0;
+}
+
+a:hover {
+  color: #F59860;
+}
+
+/*barra de navegacion*/
+.estilo-links {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 15px;
+  list-style-type: none;
+  text-decoration: none;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.estilo-links-contacto {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 35px;
+  margin-top: 12px;
+  margin-bottom: 50px;
+}
+
+.navbar {
+  display: none;
+}
+
+.nav-movil {
+  display: none;
+}
+
+.home {
+  margin-left: 0px;
+  font-family: "variacion", sans-serif;
+  color: #1B455D;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.Fotografia {
+  font-family: "fuente-secundaria", verdana, sans-serif;
+  margin-left: 15%;
+  color: #1B455D;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.Publicidad {
+  margin-left: 30px;
+  font-family: "fuente-secundaria", Verdana, sans-serif;
+  color: #1B455D;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.Marketing-digital {
+  margin-left: 30px;
+  font-family: "fuente-secundaria", Verdana, sans-serif;
+  color: #1B455D;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.Desarrollo-web {
+  margin-left: 30px;
+  margin-right: 30px;
+  font-family: "fuente-secundaria", Verdana, sans-serif;
+  color: #1B455D;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.boton-contacto {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  font-family: "fuente-secundaria", Verdana, sans-serif;
+  border-radius: 28px;
+  font-size: 20px;
+  background-color: #F59860;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 /*footer*/
