@@ -6,3 +6,4 @@ En esta tercera pre entrega se agregaron elementos de posicionamiento SEO, image
 reestructuración del index, contenido, enlaces a redes sociales, actualización de footer,
 implementación de sass con partials y estructura HTML final.
 
+Por alguna razón, al abrir la página desde el html como "open in default browser" se visualiza bien el nav responsive, pero no al entrar por "pages"
