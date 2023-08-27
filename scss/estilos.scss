@@ -239,6 +239,9 @@ a:hover{
 
 
     /* header */
+    .iconos{
+        display: none;
+    }
     .seccion-1{
         display: grid;
         grid-template-columns: 1fr;
@@ -248,16 +251,7 @@ a:hover{
         grid-template-areas:
         "texto-principal"
         "texto-secundario"
-        "img-portada";  
-    }
-    .img-portada{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        grid-area: img-portada;
-    }
-    .iconos{
-        display: none;
+        "imagen-portada";  
     }
     /*textos*/
     .texto-principal{
@@ -269,7 +263,7 @@ a:hover{
         font-size: 36px;
         font-style: italic;
         line-height: 12px;
-        color: #F59860;
+        color: $color-secundario;
         font-family: "fuente-principal", sans-serif;
     }
     .texto-secundario{
@@ -277,11 +271,16 @@ a:hover{
         justify-content: center;
         align-items: center;
         margin-left: 0%;
-        margin-bottom: 15%;
         grid-area: texto-secundario;
         line-height: 0px;
         font-size: 20px;
-        color:#F59860;
+        color: $color-secundario;
+    }
+    .imagen-portada{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: imagen-portada;
     }
 
     .textos-presentacion{
@@ -310,7 +309,7 @@ a:hover{
         font-size: 20px;
         color: $color-primario;
         margin-bottom: 50px;
-        margin-right: 20px;
+        margin-right: 10px;
     }
     .tarjetas-presentacion{
         display: grid;
@@ -382,7 +381,7 @@ a:hover{
         display: flex;
         width: 100%;
         height: 100%;
-        background-image: url("../assets/imagenes/DSC_0335.jpg");
+        background-image: url("../assets/imagenes/hombre-negocios-joven-decidido-mirando-otro-lado.jpg");
         background-position: center;
         background-size: cover;
     }
