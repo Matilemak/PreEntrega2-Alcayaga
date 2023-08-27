@@ -151,7 +151,7 @@
   font-size: 20px;
   color: #1B455D;
   margin-bottom: 50px;
-  margin-right: 400px;
+  margin-right: 25%;
 }
 
 .tarjetas-presentacion {
@@ -1263,24 +1263,16 @@ a:hover {
     top: 0;
   }
   /* header */
+  .iconos {
+    display: none;
+  }
   .seccion-1 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr;
     margin-top: 15%;
-    margin-bottom: 50%;
-    grid-template-areas: "texto-principal" "texto-secundario" "img-portada";
+    grid-template-areas: "texto-principal" "texto-secundario" "imagen-portada";
   }
-  .img-portada {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: img-portada;
-  }
-  .iconos {
-    display: none;
-  }
-  /*textos*/
   .texto-principal {
     display: flex;
     justify-content: center;
@@ -1303,6 +1295,14 @@ a:hover {
     line-height: 0px;
     font-size: 24px;
     color: #F59860;
+  }
+  .imagen-portada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 0%;
+    grid-area: imagen-portada;
   }
   .textos-presentacion {
     display: flex;
@@ -1587,7 +1587,7 @@ a:hover {
   }
 }
 /* diseño responsive */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
   .estilo-links {
     display: flex;
     flex-wrap: nowrap;
@@ -1596,6 +1596,246 @@ a:hover {
   }
   .header {
     display: none;
+  }
+  .seccion-1 {
+    display: grid;
+    grid-template-areas: "img-portada texto iconos";
+    align-items: start;
+    margin-top: 13%;
+  }
+  .box-img-portada {
+    display: flex;
+    width: 414px;
+    height: 465px;
+  }
+  .imagen-portada {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 25%;
+    width: 414px;
+    height: 465px;
+  }
+  .iconos {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-right: 15%;
+  }
+  .texto-principal {
+    font-family: "kanit", sans-serif;
+    font-style: italic;
+    margin-left: 0%;
+    font-size: 50px;
+    line-height: 0px;
+    color: #F59860;
+  }
+  .texto-secundario {
+    font-family: "feunte-secundaria", verdana, sans-serif;
+    margin-left: 0%;
+    line-height: 0px;
+    font-size: 24px;
+    color: #F59860;
+  }
+  /*Logotipos*/
+  .icono-linkedin {
+    display: flex;
+    padding-bottom: 11px;
+  }
+  .icono-behance {
+    display: flex;
+    padding-bottom: 11px;
+  }
+  .icono-instagram {
+    display: flex;
+    padding-bottom: 11px;
+  }
+  .icono-twitter {
+    display: flex;
+    padding-bottom: 11px;
+  }
+  .icono-telegram {
+    display: flex;
+    padding-bottom: 11px;
+  }
+  .seccion-2 {
+    display: flex;
+    flex-direction: row;
+    height: 350px;
+  }
+  .seccion-2-izq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1B455D;
+    width: 1600px;
+  }
+  .seccion-2-der {
+    display: flex;
+    width: 920px;
+    background-image: url("../assets/imagenes/hombre-negocios-joven-decidido-mirando-otro-lado.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .sm {
+    font-family: "kanit", sans-serif;
+    font-style: inherit;
+    font-size: 30px;
+    margin-left: 117px;
+    color: #ffffff;
+  }
+  .texto-sm {
+    font-family: "fuente-secundaria", verdana, sans-serif;
+    font-size: 18px;
+    margin-left: 117px;
+    margin-right: 60px;
+    margin-top: 16px;
+    color: #ffffff;
+  }
+  /*tarjetas presentacion*/
+  .fondo-presentacion {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #edf5fa;
+  }
+  .textos-presentacion {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 50px;
+    margin-left: 180px;
+  }
+  .titulo-2 {
+    display: flex;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 36px;
+    color: #1B455D;
+    line-height: 0px;
+  }
+  .descripcion-2 {
+    display: flex;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #1B455D;
+    margin-bottom: 50px;
+    margin-right: 25%;
+  }
+  .tarjetas-presentacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    gap: 15px;
+  }
+  .curriculum {
+    font-family: "Kanit", sans-serif;
+    font-size: 36px;
+    border-radius: 30px;
+    color: #ffffff;
+    background: #1B455D;
+    padding: 105px 72px 105px 72px;
+    text-decoration: none;
+  }
+  .experiencia {
+    display: flex;
+    align-self: flex-end;
+    font-family: "Kanit", sans-serif;
+    font-size: 36px;
+    border-radius: 30px;
+    color: #ffffff;
+    background: #1B455D;
+    padding: 105px 72px 105px 72px;
+    text-decoration: none;
+  }
+  .portafolio {
+    font-family: "Kanit", sans-serif;
+    font-size: 36px;
+    border-radius: 30px;
+    color: #ffffff;
+    background: #1B455D;
+    padding: 105px 72px 105px 72px;
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .estilo-links {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+  }
+  .header {
+    display: none;
+  }
+  .curriculum {
+    font-family: "Kanit", sans-serif;
+    font-size: 36px;
+    border-radius: 30px;
+    color: #ffffff;
+    background: #1B455D;
+    padding: 180px 115px 180px 115px;
+    text-decoration: none;
+  }
+  .experiencia {
+    display: flex;
+    align-self: flex-end;
+    font-family: "Kanit", sans-serif;
+    font-size: 36px;
+    border-radius: 30px;
+    color: #ffffff;
+    background: #1B455D;
+    padding: 180px 115px 180px 115px;
+    text-decoration: none;
+  }
+  .portafolio {
+    font-family: "Kanit", sans-serif;
+    font-size: 36px;
+    border-radius: 30px;
+    color: #ffffff;
+    background: #1B455D;
+    padding: 180px 115px 180px 115px;
+    text-decoration: none;
+  }
+  .tarjetas-presentacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    gap: 15px;
+  }
+  .curriculum {
+    font-family: "Kanit", sans-serif;
+    font-size: 36px;
+    border-radius: 30px;
+    color: #ffffff;
+    background: #1B455D;
+    padding: 180px 100px 180px 100px;
+    text-decoration: none;
+  }
+  .experiencia {
+    display: flex;
+    align-self: flex-end;
+    font-family: "Kanit", sans-serif;
+    font-size: 36px;
+    border-radius: 30px;
+    color: #ffffff;
+    background: #1B455D;
+    padding: 180px 100px 180px 100px;
+    text-decoration: none;
+  }
+  .portafolio {
+    font-family: "Kanit", sans-serif;
+    font-size: 36px;
+    border-radius: 30px;
+    color: #ffffff;
+    background: #1B455D;
+    padding: 180px 100px 180px 100px;
+    text-decoration: none;
   }
 }
 
