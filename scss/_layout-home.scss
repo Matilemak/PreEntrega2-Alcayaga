@@ -5,35 +5,39 @@
     grid-template-areas:
     "img-portada texto iconos";
     align-items: start;
-    margin-top: 15%;
-    margin-bottom: 5%;
+    margin-top: 13%;
 }
-.img-portada{
+.box-img-portada{
     display: flex;
-    align-items: center;
-    
+    width: 414px;
+    height: 465px;
+}
+.imagen-portada{
+    display: flex;
+    align-items: flex-end;
+    margin-left: 200px;
+    width: 414px;
+    height: 465px;
 }
 .iconos{
     display: flex;
     align-items: flex-end;
     flex-direction: column;
-    margin-right: 8%;
-    margin-bottom: 100px;
+    margin-right: 15%;
 }
 
 /*textos*/
 .texto-principal{
     font-family: 'kanit', sans-serif;
     font-style: italic;
-    margin-left: 25%;
+    margin-left: 0%;
     font-size: 50px;
     line-height: 0px;
     color: $color-secundario;
 }
-
 .texto-secundario{
     font-family: 'feunte-secundaria', verdana, sans-serif;
-    margin-left: 25%;
+    margin-left: 0%;
     line-height: 0px;
     font-size: 24px;
     color: $color-secundario;
@@ -78,7 +82,7 @@
 .seccion-2-der{
     display: flex;
     width: 920px;
-    background-image: url("../assets/imagenes/DSC_0335.jpg");
+    background-image: url("../assets/imagenes/hombre-negocios-joven-decidido-mirando-otro-lado.jpg");
     background-position: center;
     background-size: cover;
 }

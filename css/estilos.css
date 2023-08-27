@@ -11,28 +11,35 @@
   display: grid;
   grid-template-areas: "img-portada texto iconos";
   align-items: start;
-  margin-top: 15%;
-  margin-bottom: 5%;
+  margin-top: 13%;
 }
 
-.img-portada {
+.box-img-portada {
   display: flex;
-  align-items: center;
+  width: 414px;
+  height: 465px;
+}
+
+.imagen-portada {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 200px;
+  width: 414px;
+  height: 465px;
 }
 
 .iconos {
   display: flex;
   align-items: flex-end;
   flex-direction: column;
-  margin-right: 8%;
-  margin-bottom: 100px;
+  margin-right: 15%;
 }
 
 /*textos*/
 .texto-principal {
   font-family: "kanit", sans-serif;
   font-style: italic;
-  margin-left: 25%;
+  margin-left: 0%;
   font-size: 50px;
   line-height: 0px;
   color: #F59860;
@@ -40,7 +47,7 @@
 
 .texto-secundario {
   font-family: "feunte-secundaria", verdana, sans-serif;
-  margin-left: 25%;
+  margin-left: 0%;
   line-height: 0px;
   font-size: 24px;
   color: #F59860;
@@ -89,7 +96,7 @@
 .seccion-2-der {
   display: flex;
   width: 920px;
-  background-image: url("../assets/imagenes/DSC_0335.jpg");
+  background-image: url("../assets/imagenes/hombre-negocios-joven-decidido-mirando-otro-lado.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -629,7 +636,7 @@ a:hover {
   font-family: "fuente-secundaria", Verdana, sans-serif;
   border-radius: 28px;
   font-size: 20px;
-  background-color: #F59860;
+  background-color: #1B455D;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   color: #ffffff;
@@ -1049,9 +1056,76 @@ a:hover {
     height: 150px;
     background-color: #F59860;
   }
+  /*estilo seccion contacto movil*/
+  .container-fluid {
+    background-image: url("../assets/imagenes/contacto.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-top: 46px;
+  }
+  .box-formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 60%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: #ffffff;
+  }
+  .form-titulo {
+    display: flex;
+    margin-bottom: 5px;
+    font-family: "kanit";
+    font-size: 55px;
+    font-style: italic;
+  }
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    font-family: "fuente-secundaria";
+    font-size: 16px;
+    gap: 0px;
+    margin-bottom: 25px;
+  }
+  .titulo-form-servicio {
+    display: flex;
+    margin-bottom: 25px;
+    margin-right: 515px;
+    font-size: 24px;
+    font-family: "fuente-secundaria";
+  }
+  .form-servicio {
+    display: flex;
+  }
+  .label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .input {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding-top: 5px;
+    margin-left: 80px;
+  }
+  .form-mensaje {
+    display: flex;
+    flex-direction: column;
+    font-family: "fuente-secundaria";
+    font-size: 16px;
+    margin-top: 30px;
+    gap: 5px;
+  }
+  .email {
+    display: flex;
+    margin-top: 23px;
+  }
+  /*estilo footer movil*/
   .footer {
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
     color: #1B455D;
     text-decoration: none;
   }
@@ -1101,6 +1175,9 @@ a:hover {
 /*diseño responsive tablets*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .estilo-links {
+    display: none;
+  }
+  .estilo-links-contacto {
     display: none;
   }
   /*menu hamburguesa*/
@@ -1325,6 +1402,139 @@ a:hover {
     margin-bottom: 50px;
     color: #ffffff;
   }
+  /*estilo seccion contacto tablets*/
+  .container-fluid {
+    background-image: url("../assets/imagenes/contacto.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-top: 46px;
+  }
+  .box-formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 60%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: #ffffff;
+  }
+  .form-titulo {
+    display: flex;
+    margin-bottom: 5px;
+    font-family: "kanit";
+    font-size: 55px;
+    font-style: italic;
+  }
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    font-family: "fuente-secundaria";
+    font-size: 16px;
+    gap: 0px;
+    margin-bottom: 25px;
+  }
+  .titulo-form-servicio {
+    display: flex;
+    margin-bottom: 25px;
+    margin-right: 515px;
+    font-size: 24px;
+    font-family: "fuente-secundaria";
+  }
+  .form-servicio {
+    display: flex;
+  }
+  .label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .input {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding-top: 5px;
+    margin-left: 80px;
+  }
+  .form-mensaje {
+    display: flex;
+    flex-direction: column;
+    font-family: "fuente-secundaria";
+    font-size: 16px;
+    margin-top: 30px;
+    gap: 5px;
+  }
+  .email {
+    display: flex;
+    margin-top: 23px;
+  }
+  /*estilo seccion contacto*/
+  .container-fluid {
+    background-image: url("../assets/imagenes/contacto.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-top: 46px;
+  }
+  .box-formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 60%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: #ffffff;
+  }
+  .form-titulo {
+    display: flex;
+    margin-bottom: 5px;
+    font-family: "kanit";
+    font-size: 55px;
+    font-style: italic;
+  }
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    font-family: "fuente-secundaria";
+    font-size: 16px;
+    gap: 0px;
+    margin-bottom: 25px;
+  }
+  .titulo-form-servicio {
+    display: flex;
+    margin-bottom: 25px;
+    margin-right: 515px;
+    font-size: 24px;
+    font-family: "fuente-secundaria";
+  }
+  .form-servicio {
+    display: flex;
+  }
+  .label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .input {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding-top: 5px;
+    margin-left: 80px;
+  }
+  .form-mensaje {
+    display: flex;
+    flex-direction: column;
+    font-family: "fuente-secundaria";
+    font-size: 16px;
+    margin-top: 30px;
+    gap: 5px;
+  }
+  .email {
+    display: flex;
+    margin-top: 23px;
+  }
+  /*footer tablets*/
   .footer {
     margin-top: 20px;
     margin-bottom: 50px;
