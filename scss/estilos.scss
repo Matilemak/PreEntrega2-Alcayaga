@@ -35,12 +35,6 @@ a:hover{
     margin-top: 12px;
     margin-bottom: 50px;
 }
-.navbar{
-    display: none;
-}
-.nav-movil{
-    display: none;
-}
 .home{ 
     margin-left: 0px;
     font-family: 'variacion', sans-serif;
@@ -151,7 +145,6 @@ a:hover{
     .estilo-links-contacto{
         display: none;
     }
-
     /*menu hamburguesa*/
     .header{
         background-color: $color-fondo;
@@ -180,6 +173,9 @@ a:hover{
         text-decoration: none;
         list-style-type: none;
     }
+    .menu{
+        list-style-type: none;
+    }
     .menu a{
         display: flex;
         justify-content: flex-end;
@@ -193,6 +189,8 @@ a:hover{
     }
     .menu a:hover{
         background-color: $background;
+        text-decoration: none;
+        list-style-type: none;
     }
     .hamb{
         cursor: pointer;
@@ -654,7 +652,6 @@ a:hover{
     .estilo-links-contacto{
         display: none;
     }
-
     /*menu hamburguesa*/
     .header{
         background-color: $color-fondo;
@@ -680,6 +677,9 @@ a:hover{
         overflow: hidden;
         max-height: 0;
         transition: max-height .5s ease-out;
+    }
+    .menu{
+        list-style-type: none;
     }
     .menu a{
         display: flex;

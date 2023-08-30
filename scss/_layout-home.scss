@@ -24,8 +24,14 @@
     align-items: flex-end;
     flex-direction: column;
     margin-right: 15%;
+    transition: 0.5s;
+    object-fit: cover;
 }
-
+.iconos a:hover{
+    width: 100%;
+    height: 100%;
+    transform: scale(1.15);
+}
 /*textos*/
 .texto-principal{
     font-family: 'kanit', sans-serif;
