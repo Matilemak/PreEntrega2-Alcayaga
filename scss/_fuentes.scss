@@ -1,8 +1,8 @@
-$fuente-principal: Verdana, sans-serif;
-$fuente-secundaria: sans-serif;
+$fuente-principal: 'kanit', Verdana, sans-serif;
+$fuente-secundaria: 'fuente-secundaria', sans-serif;
 @font-face {
     font-family: 'kanit';
-    src: url('../assets/fuentes/Kanit-Medium.ttf');
+    src: url('../assets/fuentes/kanit-medium.ttf');
     font-family: 'fuente-secundaria';
-    src: url('../assets/fuentes/Montserrat-Medium.ttf');
+    src: url('../assets/fuentes/montserrat-medium.ttf');
 }

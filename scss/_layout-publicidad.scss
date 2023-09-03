@@ -1,4 +1,27 @@
 /*estilos seccion publicidad*/
+.titulo-servicio{
+    color: $color-primario;
+    font-family: $fuente-principal;
+    font-size: 48px;
+    margin-left: 25px;
+}
+.servicio-branding{
+    color: $color-primario;
+    font-family: $fuente-secundaria;
+    font-style: normal;
+    font-size: 36px;
+    margin-left: 25px;
+    margin-top: 0%;
+}
+.texto-branding{
+    color: $color-primario;
+    font-family: $fuente-secundaria;
+    font-style: normal;
+    font-size: 20px;
+    margin-left: 26px;
+    margin-right: 25px;
+    margin-top: 0%;
+}
 .layout-publicidad{
     display: grid;
     grid-template-columns: 1fr;
@@ -8,7 +31,7 @@
     font-family: 'fuente-secundaria', verdana, sans-serif;
     font-size: 24px;
     font-style: italic;
-    margin-top: 118px;
+    margin-top: 80px;
     margin-left: 25px;
     margin-right: 25px;
     grid-template-areas:
