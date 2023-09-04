@@ -1,6 +1,15 @@
-/*layout fotografia*/
-
 /*Estilo seccion fotografia*/
+.titulo-pagina{
+    color: $color-primario;
+    font-family: $fuente-principal;
+    font-size: 48px;
+    margin-left: 25px;
+    margin-top: 0%;
+}
+.contenedor-servicios{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
 .layout-fotografia{
     display: grid;
     grid-template-columns: 2, 1fr;
