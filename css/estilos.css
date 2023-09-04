@@ -204,16 +204,20 @@
 }
 
 /*Estilo seccion fotografia*/
+.seccion-fotografia {
+  margin-top: 80px;
+  margin-left: 25px;
+}
+
 .titulo-pagina {
   color: #1B455D;
   font-family: "kanit", Verdana, sans-serif;
+  font-style: italic;
   font-size: 48px;
-  margin-left: 25px;
-  margin-top: 0%;
 }
 
 .contenedor-servicios {
-  margin-top: 25px;
+  margin-top: 0px;
   margin-bottom: 25px;
 }
 
@@ -228,7 +232,7 @@
   font-style: italic;
   margin-left: 25px;
   margin-right: 25px;
-  margin-top: 118px;
+  margin-top: 80px;
   grid-template-areas: "arquitectura matrimonios" "arquitectura productos" "sesiones-urbanas sesiones-de-estudio" "call-to-action call-to-action";
 }
 
@@ -1022,6 +1026,50 @@ a:hover {
     margin-top: 16px;
     margin-bottom: 50px;
     color: #ffffff;
+  }
+  .seccion-fotografia {
+    margin-top: 40px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .titulo-pagina {
+    color: #1B455D;
+    font-family: "kanit", Verdana, sans-serif;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  .contenedor-servicios {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .titulo-servicio {
+    color: #1B455D;
+    font-family: "fuente-secundaria", sans-serif;
+    font-style: normal;
+    font-size: 32px;
+    margin-left: 25px;
+    margin-top: 0%;
+  }
+  .texto-servicio {
+    color: #1B455D;
+    font-family: "fuente-secundaria", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    margin-left: 26px;
+    margin-right: 25px;
+    margin-top: 0%;
+  }
+  .cta {
+    color: #1B455D;
+    font-family: "fuente-secundaria", sans-serif;
+    font-style: normal;
+    font-size: 22px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
   }
   .layout-fotografia {
     display: grid;

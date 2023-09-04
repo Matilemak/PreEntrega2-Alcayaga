@@ -1,13 +1,16 @@
 /*Estilo seccion fotografia*/
+.seccion-fotografia{
+    margin-top: 80px;
+    margin-left: 25px;
+}
 .titulo-pagina{
     color: $color-primario;
     font-family: $fuente-principal;
+    font-style: italic;
     font-size: 48px;
-    margin-left: 25px;
-    margin-top: 0%;
 }
 .contenedor-servicios{
-    margin-top: 25px;
+    margin-top: 0px;
     margin-bottom: 25px;
 }
 .layout-fotografia{
@@ -21,7 +24,7 @@
     font-style: italic;
     margin-left: 25px;
     margin-right: 25px;
-    margin-top: 118px;
+    margin-top: 80px;
     grid-template-areas: 
     "arquitectura matrimonios"
     "arquitectura productos"

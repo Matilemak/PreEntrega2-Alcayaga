@@ -411,6 +411,50 @@ a:hover{
         margin-bottom: 50px;
         color: $color-fondo;
     }
+    .seccion-fotografia{
+        margin-top: 40px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .titulo-pagina{
+        color: $color-primario;
+        font-family: $fuente-principal;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .contenedor-servicios{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .titulo-servicio{
+        color: $color-primario;
+        font-family: $fuente-secundaria;
+        font-style: normal;
+        font-size: 32px;
+        margin-left: 25px;
+        margin-top: 0%;
+    }
+    .texto-servicio{
+        color: $color-primario;
+        font-family: $fuente-secundaria;
+        font-style: normal;
+        font-size: 18px;
+        margin-left: 26px;
+        margin-right: 25px;
+        margin-top: 0%;
+    }
+    .cta{
+        color: $color-primario;
+        font-family: $fuente-secundaria;
+        font-style: normal;
+        font-size: 22px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        margin-left: 25px;
+    }
     .layout-fotografia{
         display: grid;
         grid-template-columns: 1fr;
