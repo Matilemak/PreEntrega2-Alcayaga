@@ -41,8 +41,8 @@
                 <ul class="menu">
                     <li><a href="../paginas/fotografía.html">Fotografía</a></li>
                     <li><a href="../paginas/publicidad.html">Publicidad</a></li>
-                    <li><a href="../paginas/marketing digital.html">Marketing digital</a></li>
-                    <li><a href="../paginas/desarrollo web.html">Desarrollo web</a></li>
+                    <li><a href="../paginas/marketing-digital.html">Marketing digital</a></li>
+                    <li><a href="../paginas/desarrollo-web.html">Desarrollo web</a></li>
                     <li><a href="../paginas/contacto.html">Contacto</a></li>
                 </ul>
             </nav>
@@ -52,27 +52,35 @@
     <main>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-4 offset-md-6">
+                <div class="col-md-6 offset-md-3">
                     <form class="box-formulario">
                         <h2 class="form-titulo">Conversemos</h2>
-                        <div class="formulario" class="mb-3">
+                        <div class="mb-3">
                             <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                        </div>
+                        <div class="mb-3">
                             <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                        </div>
+                        <div class="mb-3">
                             <input type="email" class="form-control" id="email" placeholder="Email">
                         </div>
                         <h3 class="titulo-form-servicio">Servicio requerido:</h3>
-                        <div class="input-label">
-                            <div class="col-md-6 label">
-                                <label for="opcion1" class="form-label">Fotografía</label>
-                                <label for="opcion2" class="form-label">Publicidad</label>
-                                <label for="opcion3" class="form-label">Marketing Digital</label>
-                                <label for="opcion4" class="form-label">Desarrollo Web</label>
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="opcion1">
+                                <label for="opcion1" class="form-check-label">Fotografía</label>
                             </div>
-                            <div class="col-md-6 input">
-                                <input type="checkbox" class="form-check-input">
-                                <input type="checkbox" class="form-check-input">
-                                <input type="checkbox" class="form-check-input">
-                                <input type="checkbox" class="form-check-input">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="opcion2">
+                                <label for="opcion2" class="form-check-label">Publicidad</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="opcion3">
+                                <label for="opcion3" class="form-check-label">Marketing Digital</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="opcion4">
+                                <label for="opcion4" class="form-check-label">Desarrollo Web</label>
                             </div>
                         </div>
                         <div class="mb-3">
@@ -87,6 +95,7 @@
                 </div>
             </div>
         </div>
+        
     </main>
     <footer class="footer">
         <div class="flex-container">

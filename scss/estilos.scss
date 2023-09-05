@@ -245,7 +245,7 @@ a:hover{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 3fr;
-        margin-top: 5%;
+        margin-top: 0%;
         margin-bottom: 20%;
         grid-template-areas:
         "texto-principal"
@@ -424,18 +424,19 @@ a:hover{
         justify-content: center;
         margin-left: 0px;
         margin-top: 0px;
+        margin-bottom: 30px;
     }
     .contenedor-servicios{
-        margin-top: 15px;
+        margin-top: 0px;
         margin-bottom: 15px;
     }
     .titulo-servicio{
         color: $color-primario;
         font-family: $fuente-secundaria;
         font-style: normal;
-        font-size: 32px;
+        font-size: 26px;
         margin-left: 25px;
-        margin-top: 0%;
+        margin-top: 15px;
     }
     .texto-servicio{
         color: $color-primario;
@@ -516,6 +517,17 @@ a:hover{
         width: 100%;
         background-size: cover;
     }
+    /*layout publicidad movil*/
+    .titulo-pagina{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: $color-primario;
+        font-family: $fuente-principal;
+        font-size: 28px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
     .layout-publicidad{
         display: grid;
         grid-template-columns: 1fr;
@@ -524,7 +536,7 @@ a:hover{
         color: $color-fondo;
         font-size: 20px;
         font-style: italic;
-        margin-top: 120px;
+        margin-top: 40px;
         margin-bottom: 10px;
         grid-template-areas:
         "branding"
@@ -571,72 +583,75 @@ a:hover{
         height: 150px;
         background-color: #F59860;
     }
-    /*estilo seccion contacto movil*/
-    .container-fluid{
-        background-image: url("../assets/imagenes/contacto.jpg");
-        background-position: center;
-        background-size: cover;
-        margin-top: 46px;
-    }
-    .box-formulario{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin-left: 60%;
-        padding-top: 60px;
-        padding-bottom: 60px;
-        color: $color-fondo;
-    }
-    .form-titulo{
-        display: flex;
-        margin-bottom: 5px;
-        font-family: 'kanit';
-        font-size: 55px;
-        font-style: italic;
-    }
-    .formulario{
-        display: flex;
-        flex-direction: column;
-        font-family: 'fuente-secundaria';
-        font-size: 16px;
-        gap: 0px;
-        margin-bottom: 25px;
-    }
-    .titulo-form-servicio{
-        display: flex;
-        margin-bottom: 25px;
-        margin-right: 515px;
-        font-size: 24px;
-        font-family: 'fuente-secundaria'
-    }
-    .form-servicio{
-        display: flex;
-    }
-    .label{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-    .input{
-        display: flex;
-        flex-direction: column;
-        gap: 35px;
-        padding-top: 5px;
-        margin-left: 80px;
-    }
-    .form-mensaje{
-        display: flex;
-        flex-direction: column;
-        font-family: 'fuente-secundaria';
-        font-size: 16px;
-        margin-top: 30px;
-        gap: 5px;
-    }
-    .email{
-        display: flex;
-        margin-top: 23px;
-    }
+    /*estilo seccion contacto*/
+.container-fluid{
+    background-image: url("../assets/imagenes/contacto.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-top: 46px;
+}
+.box-formulario{
+    padding-top: 75px;
+    padding-bottom: 75px;
+    color: $color-fondo;
+}
+.form-titulo{
+    margin-right: 310px;
+    margin-bottom: 25px;
+    font-family: 'kanit';
+    font-size: 55px;
+    font-style: italic;
+}
+.form-control{
+    font-family: 'fuente-secundaria';
+    font-size: 16px;
+    margin-bottom: 25px;
+    row-gap: 15px;
+}
+.titulo-form-servicio{
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-family: 'fuente-secundaria'
+}
+.form-servicio{
+    display: flex;
+}
+.input-label{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+}
+.label{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-top: 5px;
+}
+.form-mensaje{
+    display: flex;
+    flex-direction: column;
+    font-family: 'fuente-secundaria';
+    font-size: 16px;
+    margin-top: 30px;
+    gap: 5px;
+}
+.email{
+    display: flex;
+    margin-top: 23px;
+}
+.btn-enviar{
+    background-color: $color-primario;
+    color: $color-fondo;
+}
+.btn-borrar{
+    background-color: $color-secundario;
+    color: $color-fondo;
+}
     /*estilo footer movil*/
     .footer{
         margin-top: 20px;
@@ -938,138 +953,75 @@ a:hover{
     }
 
         /*estilo seccion contacto tablets*/
-    .container-fluid{
-        background-image: url("../assets/imagenes/contacto.jpg");
-        background-position: center;
-        background-size: cover;
-        margin-top: 46px;
-    }
-    .box-formulario{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin-left: 60%;
-        padding-top: 60px;
-        padding-bottom: 60px;
-        color: $color-fondo;
-    }
-    .form-titulo{
-        display: flex;
-        margin-bottom: 5px;
-        font-family: 'kanit';
-        font-size: 55px;
-        font-style: italic;
-    }
-    .formulario{
-        display: flex;
-        flex-direction: column;
-        font-family: 'fuente-secundaria';
-        font-size: 16px;
-        gap: 0px;
-        margin-bottom: 25px;
-    }
-    .titulo-form-servicio{
-        display: flex;
-        margin-bottom: 25px;
-        margin-right: 515px;
-        font-size: 24px;
-        font-family: 'fuente-secundaria'
-    }
-    .form-servicio{
-        display: flex;
-    }
-    .label{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-    .input{
-        display: flex;
-        flex-direction: column;
-        gap: 35px;
-        padding-top: 5px;
-        margin-left: 80px;
-    }
-    .form-mensaje{
-        display: flex;
-        flex-direction: column;
-        font-family: 'fuente-secundaria';
-        font-size: 16px;
-        margin-top: 30px;
-        gap: 5px;
-    }
-    .email{
-        display: flex;
-        margin-top: 23px;
-    }
+        .container-fluid{
+            background-image: url("../assets/imagenes/contacto.jpg");
+            background-position: center;
+            background-size: cover;
+            margin-top: 46px;
+        }
+        .box-formulario{
+            padding-top: 75px;
+            padding-bottom: 75px;
+            color: $color-fondo;
+        }
+        .form-titulo{
+            margin-right: 310px;
+            margin-bottom: 25px;
+            font-family: 'kanit';
+            font-size: 55px;
+            font-style: italic;
+        }
+        .form-control{
+            font-family: 'fuente-secundaria';
+            font-size: 16px;
+            margin-bottom: 25px;
+            row-gap: 15px;
+        }
+        .titulo-form-servicio{
+            margin-bottom: 25px;
+            font-size: 28px;
+            font-family: 'fuente-secundaria'
+        }
+        .form-servicio{
+            display: flex;
+        }
+        .input-label{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 25px;
+        }
+        .label{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .input{
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            padding-top: 5px;
+        }
+        .form-mensaje{
+            display: flex;
+            flex-direction: column;
+            font-family: 'fuente-secundaria';
+            font-size: 16px;
+            margin-top: 30px;
+            gap: 5px;
+        }
+        .email{
+            display: flex;
+            margin-top: 23px;
+        }
+        .btn-enviar{
+            background-color: $color-primario;
+            color: $color-fondo;
+        }
+        .btn-borrar{
+            background-color: $color-secundario;
+            color: $color-fondo;
+        }
 
-    /*estilo seccion contacto*/
-    .container-fluid{
-        background-image: url("../assets/imagenes/contacto.jpg");
-        background-position: center;
-        background-size: cover;
-        margin-top: 46px;
-    }
-    .box-formulario{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin-left: 60%;
-        padding-top: 60px;
-        padding-bottom: 60px;
-        color: $color-fondo;
-    }
-    .form-titulo{
-        display: flex;
-        margin-bottom: 5px;
-        font-family: 'kanit';
-        font-size: 55px;
-        font-style: italic;
-    }
-    .formulario{
-        display: flex;
-        flex-direction: column;
-        font-family: 'fuente-secundaria';
-        font-size: 16px;
-        gap: 0px;
-        margin-bottom: 25px;
-    }
-    .titulo-form-servicio{
-        display: flex;
-        margin-bottom: 25px;
-        margin-right: 515px;
-        font-size: 24px;
-        font-family: 'fuente-secundaria'
-    }
-    .form-servicio{
-        display: flex;
-    }
-    .label{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-    .input{
-        display: flex;
-        flex-direction: column;
-        gap: 35px;
-        padding-top: 5px;
-        margin-left: 80px;
-    }
-    .form-mensaje{
-        display: flex;
-        flex-direction: column;
-        font-family: 'fuente-secundaria';
-        font-size: 16px;
-        margin-top: 30px;
-        gap: 5px;
-    }
-    .email{
-        display: flex;
-        margin-top: 23px;
-    }
     /*footer tablets*/
     .footer{
         margin-top: 20px;
