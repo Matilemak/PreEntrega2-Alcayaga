@@ -1,4 +1,26 @@
 /*layout home*/
+/* mixin */
+@mixin tarjeta($ancho, $alto){
+    font-family: 'Kanit', sans-serif;
+    font-size: 36px;
+    color: $color-primario;
+    background: $color-fondo;
+    padding: 180px 115px 180px 115px;
+    text-decoration: none;
+    width: $ancho;
+    height: $alto;
+}
+/* extend */
+.borde{
+    border: 3px solid $color-fondo;
+}
+@mixin borde{
+    border: 3px solid $color-fondo;
+}
+.borde-personalizado{
+    @extend .borde;
+}
+
 
 .seccion-1{
     display: grid;
@@ -149,32 +171,12 @@
     padding-bottom: 50px;
     gap: 15px;
 }
-.curriculum{
-    font-family: 'Kanit', sans-serif;
-    font-size: 36px;
-    border-radius: 30px;
-    color: #ffffff;
-    background: $color-primario;
-    padding: 180px 115px 180px 115px;
-    text-decoration: none;
+.tarjeta-curriculum{
+    @include tarjeta(180px, 115px);
+    }
+.tarjeta-experiencia{
+    @include tarjeta(180px, 115px);
 }
-.experiencia{
-    display: flex;
-    align-self: flex-end;
-    font-family: 'Kanit', sans-serif;
-    font-size: 36px;
-    border-radius: 30px;
-    color: #ffffff;
-    background: $color-primario;
-    padding: 180px 115px 180px 115px;
-    text-decoration: none;
-}
-.portafolio{
-    font-family: 'Kanit', sans-serif;
-    font-size: 36px;
-    border-radius: 30px;
-    color: #ffffff;
-    background: $color-primario;
-    padding: 180px 115px 180px 115px;
-    text-decoration: none;
+.tarjeta-portafolio{
+    @include tarjeta(180px, 115px);
 }

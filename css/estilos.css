@@ -7,6 +7,12 @@
   src: url("../assets/fuentes/montserrat-medium.ttf");
 }
 /*layout home*/
+/* mixin */
+/* extend */
+.borde, .btn-borrar, .btn-enviar, .borde-personalizado {
+  border: 3px solid #ffffff;
+}
+
 .seccion-1 {
   display: grid;
   grid-template-areas: "img-portada texto iconos";
@@ -171,36 +177,37 @@
   gap: 15px;
 }
 
-.curriculum {
+.tarjeta-curriculum {
   font-family: "Kanit", sans-serif;
   font-size: 36px;
-  border-radius: 30px;
-  color: #ffffff;
-  background: #1B455D;
+  color: #1B455D;
+  background: #ffffff;
   padding: 180px 115px 180px 115px;
   text-decoration: none;
+  width: 180px;
+  height: 115px;
 }
 
-.experiencia {
-  display: flex;
-  align-self: flex-end;
+.tarjeta-experiencia {
   font-family: "Kanit", sans-serif;
   font-size: 36px;
-  border-radius: 30px;
-  color: #ffffff;
-  background: #1B455D;
+  color: #1B455D;
+  background: #ffffff;
   padding: 180px 115px 180px 115px;
   text-decoration: none;
+  width: 180px;
+  height: 115px;
 }
 
-.portafolio {
+.tarjeta-portafolio {
   font-family: "Kanit", sans-serif;
   font-size: 36px;
-  border-radius: 30px;
-  color: #ffffff;
-  background: #1B455D;
+  color: #1B455D;
+  background: #ffffff;
   padding: 180px 115px 180px 115px;
   text-decoration: none;
+  width: 180px;
+  height: 115px;
 }
 
 /*Estilo seccion fotografia*/

@@ -62,8 +62,10 @@
 .btn-enviar{
     background-color: $color-primario;
     color: $color-fondo;
+    @extend .borde;
 }
 .btn-borrar{
     background-color: $color-secundario;
     color: $color-fondo;
+    @extend .borde;
 }
