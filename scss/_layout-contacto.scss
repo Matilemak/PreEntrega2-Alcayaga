@@ -6,11 +6,8 @@
     margin-top: 46px;
 }
 .box-formulario{
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 75px;
+    padding-bottom: 75px;
     color: $color-fondo;
 }
 .form-titulo{
@@ -20,23 +17,24 @@
     font-size: 55px;
     font-style: italic;
 }
-.formulario{
-    display: flex;
-    flex-direction: column;
+.form-control{
     font-family: 'fuente-secundaria';
     font-size: 16px;
-    gap: 15px;
-    margin-right: 412px;
     margin-bottom: 25px;
+    row-gap: 15px;
 }
 .titulo-form-servicio{
-    margin-right: 418px;
     margin-bottom: 25px;
-    font-size: 24px;
+    font-size: 28px;
     font-family: 'fuente-secundaria'
 }
 .form-servicio{
     display: flex;
+}
+.input-label{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
 }
 .label{
     display: flex;
@@ -46,10 +44,8 @@
 .input{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 18px;
     padding-top: 5px;
-    margin-left: 30px;
-    margin-right: 460px;
 }
 .form-mensaje{
     display: flex;
@@ -57,10 +53,17 @@
     font-family: 'fuente-secundaria';
     font-size: 16px;
     margin-top: 30px;
-    margin-right: 310px;
     gap: 5px;
 }
 .email{
     display: flex;
     margin-top: 23px;
+}
+.btn-enviar{
+    background-color: $color-primario;
+    color: $color-fondo;
+}
+.btn-borrar{
+    background-color: $color-secundario;
+    color: $color-fondo;
 }

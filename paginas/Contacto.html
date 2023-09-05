@@ -50,50 +50,43 @@
     </nav>
 
     <main>
-        <form class="container-fluid" class="col-md-12" action="procesar.php" method="post" alt="imagen de fondo pagina de contacto">
-            <div class="box-formulario">
-                <h1 class="form-titulo">Conversemos</h1>
-                <div class="formulario">
-                    <div>
-                        <!-- Input Nombre -->
-                        <label for="nombre"></label>
-                        <input type="text" name="nombre" required placeholder="Nombre">
-                    </div>
-                    <div>
-                        <!-- Input Apellido -->
-                        <label for="apellido"></label>
-                        <input type="text" name="apellido" required placeholder="Apellido">
-                    </div>
-                    <div>
-                        <!-- Input Email -->
-                        <label for="email"></label>
-                        <input type="email" name="email" required placeholder="Email">
-                    </div>
-                </div>
-                <!-- Checkbox -->
-                <h4 class="titulo-form-servicio">Servicio requerido</h4>
-                <div class="form-servicio">
-                    <div class="label">
-                        <label for="servicio">Fotografía</label>
-                        <label for="servicio">Publicidad</label>
-                        <label for="servicio">Marketing digital</label>
-                        <label for="servicio">Desarrollo web</label>
-                    </div>
-                    <div class="input">
-                        <input type="checkbox" name="servicio" value="Fotografía">
-                        <input type="checkbox" name="servicio" value="Publicidad">
-                        <input type="checkbox" name="servicio" value="Marketing digital">
-                        <input type="checkbox" name="servicio" value="Desarrollo web">
-                    </div>
-                </div>
-            
-                <div class="form-mensaje">
-                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="mensaje"></textarea>
-                    <button type="submit">Enviar</button>
-                    <button type="reset">Borrar</button>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 offset-md-6">
+                    <form class="box-formulario">
+                        <h2 class="form-titulo">Conversemos</h2>
+                        <div class="formulario" class="mb-3">
+                            <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                            <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <h3 class="titulo-form-servicio">Servicio requerido:</h3>
+                        <div class="input-label">
+                            <div class="col-md-6 label">
+                                <label for="opcion1" class="form-label">Fotografía</label>
+                                <label for="opcion2" class="form-label">Publicidad</label>
+                                <label for="opcion3" class="form-label">Marketing Digital</label>
+                                <label for="opcion4" class="form-label">Desarrollo Web</label>
+                            </div>
+                            <div class="col-md-6 input">
+                                <input type="checkbox" class="form-check-input">
+                                <input type="checkbox" class="form-check-input">
+                                <input type="checkbox" class="form-check-input">
+                                <input type="checkbox" class="form-check-input">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Deja un mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="4" placeholder="Mensaje"></textarea>
+                        </div>
+                        <div class="d-flex">
+                            <button type="submit" class="btn btn-enviar flex-fill me-2">Enviar</button>
+                            <button type="reset" class="btn btn-borrar flex-fill">Borrar</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </form>
+        </div>
     </main>
     <footer class="footer">
         <div class="flex-container">
