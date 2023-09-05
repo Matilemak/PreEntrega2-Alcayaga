@@ -88,9 +88,9 @@ a:hover{
     margin-bottom: 5px;
     color: $color-primario;
     text-decoration: none;
-}
-a:hover{
+    &:hover{
     color: $color-secundario;
+    }
 }
 .flex-container{
     display: flex;
@@ -186,11 +186,11 @@ a:hover{
         font-family: $fuente-secundaria;
         text-decoration: none;
         list-style-type: none;
-    }
-    .menu a:hover{
+        &:hover{
         background-color: $background;
         text-decoration: none;
         list-style-type: none;
+        }
     }
     .hamb{
         cursor: pointer;

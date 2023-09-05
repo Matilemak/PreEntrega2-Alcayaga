@@ -718,8 +718,7 @@ a:hover {
   color: #1B455D;
   text-decoration: none;
 }
-
-a:hover {
+.footer a:hover {
   color: #F59860;
 }
 
